@@ -34,8 +34,20 @@ $color-orange: #DC4627;
 $color-grey: #2B2B2B;
 
 /* ==========================================================================
-   1.0  Variables & Components
+		3.0 - Fonts
    ========================================================================== */
+
+$font-default: "montserrat";
+$font-default-italic: "montserrat_italic";
+@font-face {
+    font-family: montserrat;
+    src: url("../../../../mnsm_webfont/Montserrat-Variable.woff2") format("woff2"), url("../../../../mnsm_webfont/Montserrat-Variable.woff") format("woff");
+}
+
+@font-face {
+    font-family: montserrat_italic;
+    src: url("../../../../mnsm_webfont/Montserrat-Italic-Variable.woff2") format("woff2"), url("../../../../mnsm_webfont/Montserrat-Italic-Variable.woff") format("woff");
+}
 
 
 /* ==========================================================================
