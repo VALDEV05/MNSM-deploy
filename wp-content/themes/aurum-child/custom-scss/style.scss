@@ -24,14 +24,154 @@
 
 /* Colors palette */
 
-$color-magenta: #B91345;
-$color-orange-light: #CA6A00;
-$color-ocra: #E9AD00;
-$color-yellow: #D3C47A;
+$color-magenta: #b91345;
+$color-orange-light: #ca6a00;
+$color-ocra: #e9ad00;
+$color-yellow: #d3c47a;
 $color-black: #000000;
 $color-white: #ffffff;
-$color-orange: #DC4627;
-$color-grey: #2B2B2B;
+$color-orange: #dc4627;
+$color-grey: #2b2b2b;
+$color-background: #161513;
+
+/* ==========================================================================
+		2.0 - Resets
+   ========================================================================== */
+
+.page-container {
+    margin: 0px auto;
+}
+
+* {
+    &::before,
+    &::after {
+        display: none !important;
+        content: unset !important;
+    }
+    -webkit-touch-callout: none;
+    /*iOS Safari*/
+    -webkit-user-select: none;
+    /*
+      Safari,
+      Chrome,
+      Opera,
+      Samsung
+      */
+    -khtml-user-select: none;
+    /*
+      Konqueror
+      HTML
+      */
+    -moz-user-select: none;
+    /*
+      Firefox
+      */
+    -ms-user-select: none;
+    /*
+      Edge,
+      IE
+      */
+    user-select: none;
+    /*
+      Modern
+      browsers
+      */
+}
+
+*:focus,
+*:focus-visible,
+*:focus-within,
+.btn-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+    &>* {
+        width: unset;
+        max-width: unset;
+    }
+    .vc_col-sm {
+        &-1 {
+            width: 8.33333333%;
+        }
+        &-2 {
+            width: 16.66666667%;
+        }
+        &-3 {
+            width: 25%;
+        }
+        &-4 {
+            width: 33.33333333%;
+        }
+        &-5 {
+            width: 41.666666667%;
+        }
+        &-6 {
+            width: 50%;
+        }
+        &-7 {
+            width: 58.3333333334%;
+        }
+        &-8 {
+            width: 66.66666667%;
+        }
+        &-9 {
+            width: 74.999999999999%;
+        }
+        &-10 {
+            width: 83.3333333%;
+        }
+        &-11 {
+            width: 91.66666667%;
+        }
+        &-12 {
+            width: 100%;
+        }
+    }
+}
+
+.col-md {
+    &-1 {
+        width: 8.33333333%;
+    }
+    &-2 {
+        width: 16.66666667%;
+    }
+    &-3 {
+        width: 25%;
+    }
+    &-4 {
+        width: 33.33333333%;
+    }
+    &-5 {
+        width: 41.666666667%;
+    }
+    &-6 {
+        width: 50%;
+    }
+    &-7 {
+        width: 58.3333333334%;
+    }
+    &-8 {
+        width: 66.66666667%;
+    }
+    &-9 {
+        width: 74.999999999999%;
+    }
+    &-10 {
+        width: 83.3333333%;
+    }
+    &-11 {
+        width: 91.66666667%;
+    }
+    &-12 {
+        width: 100%;
+    }
+}
+
 
 /* ==========================================================================
 		3.0 - Fonts
@@ -47,6 +187,55 @@ $font-default-italic: "montserrat_italic";
 @font-face {
     font-family: montserrat_italic;
     src: url("../../../../mnsm_webfont/Montserrat-Italic-Variable.woff2") format("woff2"), url("../../../../mnsm_webfont/Montserrat-Italic-Variable.woff") format("woff");
+}
+
+
+/* ==========================================================================
+		4.0 - Globals
+   ========================================================================== */
+
+body {
+    * {
+        font-family: $font-default;
+        margin-bottom: 0;
+    }
+    font-family: $font-default;
+    background-color: $color-background;
+    color: $color-white;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    a {
+        color: $color-white;
+        text-decoration: none;
+        &:hover {
+            color: unset;
+            text-decoration: none;
+        }
+    }
+    p {
+        font-style: normal;
+        font-weight: 500;
+        line-height: 25px;
+    }
+    .vc_column-inner {
+        padding: 0;
+    }
+    h1 {
+        font-size: 72px;
+        font-weight: 900;
+        text-transform: unset;
+    }
+    h2 {
+        font-size: 45px;
+        font-weight: 900;
+        text-transform: unset;
+    }
+}
+
+.wpb-content-wrapper {
+    position: relative;
 }
 
 
