@@ -250,6 +250,27 @@ header.site-header {
     .site-header {
         &_top-bar {
             background-color: $color-background;
+            .container {
+                .row {
+                    padding: 16px 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    position: relative;
+                    .social-menu_widget {
+                        ul {
+                            list-style: none;
+                            padding-left: 0;
+                            display: flex;
+                            gap: 16px;
+                        }
+                    }
+                    .text-centered {
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
         }
     }
 }
