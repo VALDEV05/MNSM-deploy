@@ -9,6 +9,8 @@
 
 /* Add bootstrap support to the Wordpress theme*/
 
+
+
 function theme_add_bootstrap()
 {
     wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '-child/bootstrap/css/bootstrap.min.css');
