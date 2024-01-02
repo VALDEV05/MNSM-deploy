@@ -202,10 +202,10 @@ body {
     font-family: $font-default;
     background-color: $color-background;
     color: $color-white;
-    font-size: 17px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 500;
+    line-height: 149.1%;
     a {
         color: $color-white;
         text-decoration: none;
@@ -215,22 +215,25 @@ body {
         }
     }
     p {
+        font-size: 18px;
         font-style: normal;
         font-weight: 500;
-        line-height: 25px;
+        line-height: 149.1%
     }
     .vc_column-inner {
         padding: 0;
     }
     h1 {
-        font-size: 72px;
-        font-weight: 900;
-        text-transform: unset;
+        font-size: 75px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 98%;
     }
     h2 {
         font-size: 45px;
-        font-weight: 900;
-        text-transform: unset;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
     }
 }
 
