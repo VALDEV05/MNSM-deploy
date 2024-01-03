@@ -1,6 +1,7 @@
 # MNSM-deploy
 1. Richiedere orari di apertura
-
+2. Rimuovere scroll when open menu
+3. Remove scroll bar
 
 
 
