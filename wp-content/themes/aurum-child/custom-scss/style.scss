@@ -298,14 +298,21 @@ body {
     }
 }
 
+.social-menu_widget {
+    ul {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        gap: 16px;
+    }
+}
+
 
 /* ==========================================================================
 		5.0 - Header
    ========================================================================== */
 
 header.site-header {
-    position: unset;
-    z-index: unset;
     .site-header {
         &_top-bar {
             background-color: $color-background;
@@ -315,14 +322,6 @@ header.site-header {
                     display: flex;
                     justify-content: flex-end;
                     position: relative;
-                    .social-menu_widget {
-                        ul {
-                            list-style: none;
-                            padding-left: 0;
-                            display: flex;
-                            gap: 16px;
-                        }
-                    }
                     .text-centered {
                         position: absolute;
                         left: 50%;
@@ -361,6 +360,37 @@ header.site-header {
                         display: flex;
                         align-items: center;
                         gap: 64px;
+                        margin-left: 32px;
+                    }
+                }
+            }
+        }
+    }
+    &.activeMenuFullPage {
+        background: transparent;
+        .site-header {
+            &_top-bar {
+                .container {
+                    opacity: 0;
+                }
+            }
+        }
+        .container {
+            .row {
+                .col-md-6 {
+                    .menu {
+                        &-left {
+                            .container-header-logo-secondary {
+                                img {
+                                    max-width: 220px;
+                                }
+                                &.container-header-logo-secondary_second-logo {
+                                    img {
+                                        filter: invert(0);
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -381,8 +411,10 @@ body {
         position: fixed;
         top: 0;
         left: 0;
-        opacity: 1;
-        z-index: 999;
+        /*  opacity: 1;
+        z-index: 999; */
+        opacity: 0;
+        z-index: -1;
         background: rgb(22, 21, 19);
         background: linear-gradient(90deg, rgba(22, 21, 19, 1) 0%, rgba(22, 21, 19, 1) 50%, rgba(226, 224, 220, 1) 50%);
         .container_custom-menu-full-page {
@@ -392,11 +424,29 @@ body {
                 position: relative;
                 width: 100%;
                 height: 100%;
-                img {
+                .strumento-musicale {
+                    img {
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                }
+                .social-network {
                     position: absolute;
-                    bottom: 0;
-                    left: 50%;
-                    transform: translateX(-50%);
+                    top: 75%;
+                    right: 10%;
+                    .social-menu_widget {
+                        ul {
+                            li {
+                                a {
+                                    svg {
+                                        stroke: $color-black;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
