@@ -40,38 +40,25 @@ function add_my_script()
 
 
 
-/* if (function_exists('acf_add_options_page')) {
+if (function_exists('acf_add_options_page')) {
     acf_add_options_page(array(
-        'page_title'    => 'Theme General Settings',
-        'menu_title'    => 'Theme Settings',
-        'menu_slug'     => 'theme-general-settings',
+        'page_title'    => 'Header Options Supply',
+        'menu_title'    => 'Header Options',
+        'menu_slug'     => 'header-options-supply',
         'capability'    => 'edit_posts',
         'redirect'      => false
     ));
 
-    acf_add_options_sub_page(array(
-        'page_title'    => 'Accomodation Page Options',
-        'menu_title'    => 'Accomodation',
-        'parent_slug'   => 'theme-general-settings',
+    /* acf_add_options_sub_page(array(
+        'page_title'    => 'Header First Logo',
+        'menu_title'    => 'Header-first-logo',
+        'parent_slug'   => 'header-options-supply',
     ));
 
     acf_add_options_sub_page(array(
-        'page_title'    => 'Assistance Page Options',
-        'menu_title'    => 'Assistance',
-        'parent_slug'   => 'theme-general-settings',
-    ));
-
-    acf_add_options_sub_page(array(
-        'page_title'    => 'Academy Page Options',
-        'menu_title'    => 'Academy',
-        'parent_slug'   => 'theme-general-settings',
-    ));
-
-    acf_add_options_sub_page(array(
-        'page_title'    => 'Convenzioni Sanitarie Page Options',
-        'menu_title'    => 'Convenzioni Sanitarie',
-        'parent_slug'   => 'theme-general-settings',
-    ));
+        'page_title'    => 'Header Second Logo',
+        'menu_title'    => 'header-second-logo',
+        'parent_slug'   => 'header-options-supply',
+    )); */
 
 }
- */

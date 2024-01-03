@@ -42,6 +42,17 @@ $color-background: #161513;
     margin: 0px auto;
 }
 
+html {
+    margin-top: 0!important;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+}
+
 * {
     &::before,
     &::after {

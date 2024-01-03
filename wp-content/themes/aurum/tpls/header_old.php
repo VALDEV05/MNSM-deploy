@@ -19,12 +19,6 @@ $has_secondary_menu = $header_type && has_nav_menu( 'secondary-menu' );
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
-				<div class="menu-left">
-					<?php get_template_part( 'tpls/header-logo-secondary' ); ?>
-				</div>
-			</div>
-			<div class="col-md-6"></div>
 			<div class="col-sm-12<?php #echo $header_type == 3 ? ' no-horizontal-padding' : ''; ?>">
 
 				<div class="header-menu<?php echo in_array( $header_type, array( 3, 4 ) ) ? ' logo-is-centered' : ''; echo $header_type == 4 ? ' menu-is-centered-also' : ''; ?>">
