@@ -62,3 +62,26 @@ if (function_exists('acf_add_options_page')) {
     )); */
 
 }
+
+
+function timestamp_to_date_italian($month_number)
+{       
+    $months_italian = array(
+            '01' => 'Gennaio', 
+            '02' => 'Febbraio', 
+            '03' => 'Marzo', 
+            '04' => 'Aprile',
+            '05' => 'Maggio', 
+            '06' => 'Giugno', 
+            '07' => 'Luglio', 
+            '08' => 'Agosto',
+            '09' => 'Settembre', 
+            '10' => 'Ottobre', 
+            '11' => 'Novembre',
+            '12' => 'Dicembre');
+
+          
+    return $months_italian[$month_number];
+
+}
+?>

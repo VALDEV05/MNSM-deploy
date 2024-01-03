@@ -313,6 +313,7 @@ body {
    ========================================================================== */
 
 header.site-header {
+    box-shadow: none;
     .site-header {
         &_top-bar {
             background-color: $color-background;
