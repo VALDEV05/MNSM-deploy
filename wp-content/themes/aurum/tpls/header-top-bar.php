@@ -72,5 +72,4 @@ function timestamp_to_date_italian($month_number)
         </div>
     </div>
 </div>
-</div>
 <!-- /.site-header_top-bar -->

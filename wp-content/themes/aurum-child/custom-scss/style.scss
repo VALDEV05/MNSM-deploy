@@ -10,7 +10,7 @@
 *  4.0 - Globals
 *  5.0 - Header
 *  6.0 - Footer
-*  7.0 - custom css
+*  7.0 - Menu Full Page
 *  -1.0 - Responsive
 *
 ***
@@ -304,6 +304,8 @@ body {
    ========================================================================== */
 
 header.site-header {
+    position: unset;
+    z-index: unset;
     .site-header {
         &_top-bar {
             background-color: $color-background;
@@ -363,6 +365,24 @@ header.site-header {
                 }
             }
         }
+    }
+}
+
+
+/* ==========================================================================
+		7.0 - Menu Full Page
+   ========================================================================== */
+
+body {
+    position: relative;
+    .menu-full-page-custom-mnsm {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background-color: red;
     }
 }
 
