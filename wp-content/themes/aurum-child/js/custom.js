@@ -1,6 +1,7 @@
 function init() {
     branding();
     activeMenuFullPage();
+    customMenuFullPage();
 }
 
 function branding() {
@@ -49,5 +50,33 @@ function activeMenuFullPage() {
     }); */
 }
 
+function customMenuFullPage() {
+    const containerMenu = jQuery('.menu-full-page-custom-mnsm .container_custom-menu-full-page .container-menu .main-menu li.current_page_item');
+    const collezioni = jQuery('.menu-full-page-custom-mnsm .container_custom-menu-full-page .container-menu .main-menu li.menu-item-has-children.menu-item-23');
+    const museo = jQuery('.menu-full-page-custom-mnsm .container_custom-menu-full-page .container-menu .main-menu li.menu-item-has-children.menu-item-24');
+    const attivita = jQuery('.menu-full-page-custom-mnsm .container_custom-menu-full-page .container-menu .main-menu li.menu-item-has-children.menu-item-38');
+
+    jQuery(collezioni).click(() => {
+        jQuery(containerMenu).removeClass('current_page_item');
+        jQuery(collezioni).addClass('activeVoiceMenu');
+        jQuery(museo).addClass('activeVoiceMenu').removeClass('activeVoiceMenu');
+        jQuery(attivita).addClass('activeVoiceMenu').removeClass('activeVoiceMenu');
+    })
+
+    jQuery(museo).click(() => {
+        jQuery(containerMenu).removeClass('current_page_item');
+
+        jQuery(museo).addClass('activeVoiceMenu');
+        jQuery(collezioni).addClass('activeVoiceMenu').removeClass('activeVoiceMenu');
+        jQuery(attivita).addClass('activeVoiceMenu').removeClass('activeVoiceMenu');
+    })
+
+    jQuery(attivita).click(() => {
+        jQuery(containerMenu).removeClass('current_page_item');
+        jQuery(attivita).addClass('activeVoiceMenu');
+        jQuery(collezioni).addClass('activeVoiceMenu').removeClass('activeVoiceMenu');
+        jQuery(museo).addClass('activeVoiceMenu').removeClass('activeVoiceMenu');
+    })
+}
 
 jQuery(document).ready(init);

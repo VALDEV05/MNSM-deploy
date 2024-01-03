@@ -1,6 +1,6 @@
 <div class="menu-full-page-custom-mnsm">
     <div class="container_custom-menu-full-page">
-        <div class="container-menu">
+        <div class="container container-menu">
             <?php @include('header-menu.php')?>
         </div>
         <div class="container_custom-menu-full-page container_custom-menu-full-page_element-background">
