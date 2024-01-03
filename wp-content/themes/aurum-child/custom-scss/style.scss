@@ -43,7 +43,7 @@ $color-background: #161513;
 }
 
 html {
-    margin-top: 0!important;
+    margin-top: 0 !important;
 }
 
 html,
@@ -183,6 +183,12 @@ body {
     }
 }
 
+.container {
+    width: 90% !important;
+    max-width: 90% !important;
+    margin: 0 auto;
+}
+
 
 /* ==========================================================================
 		3.0 - Fonts
@@ -229,7 +235,7 @@ body {
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
-        line-height: 149.1%
+        line-height: 149.1%;
     }
     .vc_column-inner {
         padding: 0;
@@ -250,6 +256,46 @@ body {
 
 .wpb-content-wrapper {
     position: relative;
+}
+
+.button-only-text {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    a {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        &:hover {
+            .text {
+                text-decoration: unset;
+            }
+        }
+    }
+    .text {
+        color: $color-background;
+        font-size: 16px;
+        font-weight: 800;
+    }
+    &_black {
+        .text {
+            color: $color-background;
+        }
+    }
+    &_light {
+        .text {
+            font-weight: 600;
+        }
+    }
+    &_magenta {
+        svg,
+        svg * {
+            fill: $color-magenta;
+        }
+        .text {
+            color: $color-magenta;
+        }
+    }
 }
 
 
@@ -279,6 +325,40 @@ header.site-header {
                         position: absolute;
                         left: 50%;
                         transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+    }
+    .container {
+        .row {
+            .col-md-6 {
+                display: flex;
+                align-items: center;
+                gap: 64px;
+                justify-content: space-between;
+                .menu {
+                    &-left {
+                        .container-header-logo-secondary {
+                            display: flex;
+                            align-items: center;
+                            gap: 64px;
+                            img {
+                                max-width: 220px;
+                            }
+                            &.container-header-logo-secondary_second-logo {
+                                img {
+                                    filter: invert(1);
+                                }
+                            }
+                        }
+                    }
+                    &-right {
+                        height: 100%;
+                        /* background-color: red; */
+                        display: flex;
+                        align-items: center;
+                        gap: 64px;
                     }
                 }
             }
