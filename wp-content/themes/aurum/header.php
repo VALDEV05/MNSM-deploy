@@ -44,7 +44,7 @@ if (!defined('ABSPATH')) {
 	 * Hooks before header
 	 */
 	do_action('aurum_body_start');
-	get_template_part('tpls/menu-full-page');
+
 	/**
 	 * Site header
 	 */
