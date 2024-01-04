@@ -808,6 +808,106 @@ body {
                     }
                 }
             }
+            &.section-mnsm-home-finale-strumento {
+                padding: 64px 0;
+                .container {
+                    .vc_row {
+                        .wpb_column.vc_column_container.vc_col-sm-6 {
+                            &>.vc_column-inner {
+                                &>.wpb_wrapper {
+                                    margin-bottom: 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 32px;
+                                    position: relative;
+                                    .wpb_text_column.wpb_content_element {
+                                        margin-bottom: 0;
+                                        &.custom-title-using-tag-for-style-home {
+                                            .wpb_wrapper {
+                                                h1 {
+                                                    strong {
+                                                        font-weight: unset;
+                                                        color: $color-magenta;
+                                                    }
+                                                }
+                                            }
+                                            &_special {
+                                                position: absolute;
+                                                top: 0;
+                                                left: 200px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.section-home-mnsm-instagram {
+                background-color: $color-grey-light;
+                .vc_row {
+                    &.row-element-mnsm-decoration-strumento-in-rilievo {
+                        .wpb_column.vc_column_container.vc_col-sm-12 {
+                            padding: 0;
+                            .vc_column-inner {
+                                .wpb_wrapper {
+                                    margin-bottom: 0;
+                                    .wpb_raw_code.wpb_content_element.wpb_raw_html {
+                                        margin-bottom: 0;
+                                        margin-top: -5px;
+                                        .wpb_wrapper {
+                                            width: 105vw;
+                                            position: relative;
+                                            left: 50%;
+                                            transform: translateX(-50%);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &>.container {
+                    .vc_row {
+                        .wpb_column.vc_column_container.vc_col-sm-12 {
+                            &>.vc_column-inner {
+                                &>.wpb_wrapper {
+                                    position: relative;
+                                    margin-bottom: 0;
+                                    .wpb_text_column.wpb_content_element {
+                                        margin-bottom: 0;
+                                        &.custom-title-using-tag-for-style-home {
+                                            .wpb_wrapper {
+                                                h1 {
+                                                    color: $color-background;
+                                                }
+                                            }
+                                            &_special {
+                                                position: absolute;
+                                                top: 0;
+                                                left: 200px;
+                                                .wpb_wrapper {
+                                                    h3 {
+                                                        color: $color-background;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.cta-only-text-mnsm {
+                                            &_special {
+                                                position: absolute;
+                                                bottom: 0;
+                                                left: 30%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         .vc_row {
             &.row-main-content-mnsm-home-hero-section {
