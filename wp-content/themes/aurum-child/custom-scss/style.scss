@@ -218,8 +218,8 @@ body {
         font-family: $font-default;
         margin-bottom: 0;
     }
+    background-color: $color-grey-light;
     font-family: $font-default;
-    background-color: $color-background;
     color: $color-white;
     font-size: 18px;
     font-style: normal;
@@ -455,6 +455,26 @@ header.site-header {
 
 
 /* ==========================================================================
+		6.0 - Footer
+   ========================================================================== */
+
+.site-footer-element-decoration {
+    position: relative;
+    top: 1px;
+    svg {
+        width: 105%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.site-footer {
+    background-color: $color-background;
+}
+
+
+/* ==========================================================================
 		7.0 - Menu Full Page
    ========================================================================== */
 
@@ -585,6 +605,7 @@ body {
    ========================================================================== */
 
 .page-container {
+    background-color: $color-background;
     .wpb-content-wrapper {
         .vc_section {
             position: relative;
