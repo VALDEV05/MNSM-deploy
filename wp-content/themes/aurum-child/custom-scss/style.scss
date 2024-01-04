@@ -33,6 +33,7 @@ $color-black: #000000;
 $color-white: #ffffff;
 $color-orange: #dc4627;
 $color-grey: #2b2b2b;
+$color-grey-light: #E2E0DC;
 $color-background: #161513;
 
 /* ==========================================================================
@@ -259,6 +260,12 @@ body {
         font-weight: 800;
         line-height: 107.1%;
     }
+    h4 {
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 102.1%;
+    }
 }
 
 .wpb-content-wrapper {
@@ -329,6 +336,11 @@ h2 {
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
+    }
+    &_yellow {
+        p {
+            color: $color-ocra;
+        }
     }
 }
 
@@ -630,6 +642,172 @@ body {
                     }
                 }
             }
+            &.section-mnsm-home-info-ticket {
+                background: rgb(226, 224, 220);
+                background: linear-gradient(180deg, rgba(226, 224, 220, 0) 0%, rgba(226, 224, 220, 1) 0%, rgba(226, 224, 220, 1) calc(100% - 300px), rgba(226, 224, 220, 0) calc(100% - 300px));
+                margin: 350px 0 0;
+                .vc_row {
+                    &:first-child {
+                        .wpb_column.vc_column_container.vc_col-sm {
+                            &-7 {
+                                margin-top: -300px;
+                                .vc_column-inner {
+                                    .wpb_wrapper {
+                                        .wpb_single_image.wpb_content_element.vc_align_left {
+                                            img {
+                                                height: 600px!important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &-5 {
+                                padding: 120px 64px;
+                                &>.vc_column-inner {
+                                    &>.wpb_wrapper {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 32px;
+                                        .wpb_text_column.wpb_content_element {
+                                            margin-bottom: 0;
+                                            &.custom-title-using-tag-for-style-home {
+                                                .wpb_wrapper {
+                                                    h2 {
+                                                        strong {
+                                                            font-weight: unset;
+                                                            color: $color-magenta;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.custom-text-using-tag-for-style-home {
+                                                .wpb_wrapper {
+                                                    p {
+                                                        color: $color-background;
+                                                        strong {
+                                                            font-weight: 500;
+                                                        }
+                                                        em {
+                                                            font-weight: 300;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:last-child {
+                        padding-top: 100px;
+                        .wpb_column.vc_column_container.vc_col-sm {
+                            &-7 {
+                                .vc_column-inner {
+                                    .wpb_wrapper {
+                                        .wpb_single_image.wpb_content_element.vc_align_left {
+                                            img {
+                                                height: 600px!important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &-5 {
+                                padding: 0px 64px;
+                                margin-top: -100px;
+                                &>.vc_column-inner {
+                                    &>.wpb_wrapper {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 32px;
+                                        .wpb_text_column.wpb_content_element {
+                                            margin-bottom: 0;
+                                            &.custom-title-using-tag-for-style-home {
+                                                .wpb_wrapper {
+                                                    h2 {
+                                                        strong {
+                                                            font-weight: unset;
+                                                            color: $color-magenta;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &.custom-text-using-tag-for-style-home {
+                                                .wpb_wrapper {
+                                                    p {
+                                                        color: $color-background;
+                                                        strong {
+                                                            font-weight: 500;
+                                                        }
+                                                        em {
+                                                            font-weight: 300;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.section-mnsm-title-sheet-music {
+                margin: 32px 0;
+                &>.vc_row.row-element-mnsm-decoration-sheet-music {
+                    position: absolute;
+                    top: 15px;
+                    .wpb_column.vc_column_container.vc_col-sm-12 {
+                        padding: 0;
+                        .vc_column-inner {
+                            padding: 0;
+                            .wpb_wrapper {
+                                margin-bottom: 0;
+                                .wpb_single_image.wpb_content_element.vc_align_left {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .container {
+                    .vc_row {
+                        .wpb_column.vc_column_container.vc_col-sm {
+                            &-8 {
+                                .vc_column-inner {
+                                    .wpb_wrapper {
+                                        margin-bottom: 0;
+                                        .wpb_text_column.wpb_content_element {
+                                            &.custom-title-using-tag-for-style-home {
+                                                margin-bottom: 0;
+                                                .wpb_wrapper {
+                                                    h4 {
+                                                        strong {
+                                                            color: $color-magenta;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &-4 {
+                                .vc_column-inner {
+                                    .wpb_wrapper {
+                                        margin-bottom: 0;
+                                        .wpb_text_column.wpb_content_element {
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         .vc_row {
             &.row-main-content-mnsm-home-hero-section {
@@ -671,6 +849,7 @@ body {
                         }
                     }
                     &-5 {
+                        padding-top: 5%;
                         &>.vc_column-inner {
                             height: 100%;
                             &>.wpb_wrapper {
@@ -698,6 +877,23 @@ body {
                                             }
                                         }
                                     }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.row-mnsm-full-custom-image-left {
+                .wpb_column.vc_column_container.vc_col-sm {
+                    &-7 {
+                        padding: 0;
+                        .vc_column-inner {
+                            padding: 0;
+                            .wpb_wrapper {
+                                padding: 0;
+                                margin-bottom: 0;
+                                .wpb_single_image.wpb_content_element.vc_align_left {
+                                    margin-bottom: 0;
                                 }
                             }
                         }
