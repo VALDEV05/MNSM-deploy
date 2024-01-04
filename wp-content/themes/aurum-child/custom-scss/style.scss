@@ -906,7 +906,105 @@ body {
                             }
                         }
                         &.row-mnsm-newsletter {
-                            border: 1px solid red;
+                            .wpb_column.vc_column_container.vc_col-sm-10 {
+                                background-image: url('../../../../wp-content/uploads/2024/01/element-decoration-mnsm-row-newsletter.png');
+                                padding: 300px 0;
+                                margin: 64px 0;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                background-position-x: right;
+                                &>.vc_column-inner {
+                                    &>.wpb_wrapper {
+                                        margin-bottom: 0;
+                                        &>.vc_row {
+                                            .wpb_column.vc_column_container.vc_col-sm-6 {
+                                                &.container-form {
+                                                    .vc_column-inner {
+                                                        .wpb_wrapper {
+                                                            width: 70%;
+                                                            margin: 0 auto;
+                                                            #gform_1 {
+                                                                .gform {
+                                                                    &_body {
+                                                                        .gform_fields {
+                                                                            .gfield {
+                                                                                &_label {
+                                                                                    color: $color-background;
+                                                                                    font-size: 9.667px;
+                                                                                    font-style: normal;
+                                                                                    font-weight: 400;
+                                                                                    line-height: 21.75px;
+                                                                                    .gfield_required {
+                                                                                        display: none;
+                                                                                    }
+                                                                                }
+                                                                                .ginput_container.ginput_container_email {
+                                                                                    input {
+                                                                                        border-radius: 27.004px;
+                                                                                        border: 1px solid $color-background;
+                                                                                        background: transparent;
+                                                                                        padding-left: 27px;
+                                                                                        &::placeholder {
+                                                                                            color: $color-background;
+                                                                                            opacity: 1;
+                                                                                            font-size: 9.667px;
+                                                                                            font-style: normal;
+                                                                                            font-weight: 400;
+                                                                                            line-height: 21.75px;
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                    &_footer {
+                                                                        input {
+                                                                            border: 0px;
+                                                                            border-radius: 27.004px;
+                                                                            background-color: $color-magenta;
+                                                                            font-size: 17.798px;
+                                                                            font-style: normal;
+                                                                            font-weight: 400;
+                                                                            line-height: 26.697px;
+                                                                            padding: 12px 0;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                &:first-child {
+                                                    .vc_column-inner {
+                                                        height: 100%;
+                                                        .wpb_wrapper {
+                                                            height: 100%;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            margin-bottom: 0;
+                                                            .wpb_text_column.wpb_content_element {
+                                                                margin-bottom: 0;
+                                                                .wpb_wrapper {
+                                                                    p {
+                                                                        color: $color-magenta;
+                                                                        font-size: 35px;
+                                                                        font-style: normal;
+                                                                        font-weight: 400;
+                                                                        line-height: 42.146px;
+                                                                        strong {
+                                                                            font-weight: 500;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
