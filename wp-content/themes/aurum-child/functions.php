@@ -49,6 +49,14 @@ if (function_exists('acf_add_options_page')) {
         'redirect'      => false
     ));
 
+    acf_add_options_page(array(
+        'page_title'    => 'Footer Options Supply',
+        'menu_title'    => 'Footer Options',
+        'menu_slug'     => 'footer-options-supply',
+        'capability'    => 'edit_posts',
+        'redirect'      => false
+    ));
+
     /* acf_add_options_sub_page(array(
         'page_title'    => 'Header First Logo',
         'menu_title'    => 'Header-first-logo',
