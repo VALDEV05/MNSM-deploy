@@ -11,6 +11,7 @@
 *  5.0 - Header
 *  6.0 - Footer
 *  7.0 - Menu Full Page
+*  8.0 - Pages Custom Css
 *  -1.0 - Responsive
 *
 ***
@@ -252,6 +253,12 @@ body {
         font-weight: 400;
         line-height: normal;
     }
+    h3 {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 107.1%;
+    }
 }
 
 .wpb-content-wrapper {
@@ -304,6 +311,24 @@ body {
         padding-left: 0;
         display: flex;
         gap: 16px;
+    }
+}
+
+h1,
+h2 {
+    strong,
+    b {
+        font-weight: 700;
+    }
+}
+
+.cta-only-text-mnsm {
+    p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
     }
 }
 
@@ -367,6 +392,11 @@ header.site-header {
                 .close-menu-full-page {
                     display: none;
                 }
+                .active-menu-full-page {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
             }
         }
     }
@@ -398,6 +428,9 @@ header.site-header {
                     }
                     .close-menu-full-page {
                         display: block;
+                        &:hover {
+                            cursor: pointer;
+                        }
                     }
                     .active-menu-full-page {
                         display: none;
@@ -520,6 +553,147 @@ body {
                                                         color: $color-magenta;
                                                         font-weight: 600;
                                                     }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+		8.0 - Pages Custom Css
+   ========================================================================== */
+
+.page-container {
+    .wpb-content-wrapper {
+        .vc_section {
+            position: relative;
+            padding: 0;
+            &.hero-home-mnsm {
+                &>.vc_row {
+                    &.row-content-script-home {
+                        width: fit-content;
+                        position: absolute;
+                        top: 500px;
+                        left: 45%;
+                        transform: translateY(-50%);
+                        .wpb_column.vc_column_container.vc_col-sm-12 {
+                            width: fit-content;
+                            .vc_column-inner {
+                                &>.wpb_wrapper {
+                                    margin-bottom: 0;
+                                    .wpb_text_column.wpb_content_element.custom-title-using-tag-for-style-home {
+                                        margin-bottom: 0;
+                                        &>.wpb_wrapper {
+                                            position: relative;
+                                            padding-bottom: 80px;
+                                            h1 {
+                                                font-size: 86px;
+                                                line-height: 98%;
+                                                &:first-child {
+                                                    margin-left: 90px;
+                                                }
+                                                &:nth-child(2) {
+                                                    margin-left: 45px;
+                                                }
+                                                strong {
+                                                    em {
+                                                        font-style: unset;
+                                                        color: $color-magenta;
+                                                    }
+                                                }
+                                                &:last-child {
+                                                    position: absolute;
+                                                    top: 170px;
+                                                    left: 220px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.row-element-decoration-mnsm-home-hero {
+                        position: absolute;
+                        z-index: -1;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        .vc_row {
+            &.row-main-content-mnsm-home-hero-section {
+                padding: 340px 0 120px;
+                .wpb_column.vc_column_container.vc_col-sm {
+                    &-7 {
+                        &>.vc_column-inner {
+                            &>.wpb_wrapper {
+                                margin-bottom: 0;
+                                position: relative;
+                                .wpb_text_column.wpb_content_element {
+                                    margin-bottom: 0;
+                                    &.custom-title-using-tag-for-style-home {
+                                        margin-bottom: 0;
+                                        .wpb_wrapper {
+                                            h1 {
+                                                strong {
+                                                    font-weight: unset;
+                                                    color: $color-magenta;
+                                                }
+                                            }
+                                        }
+                                        &_special {
+                                            width: fit-content;
+                                            position: absolute;
+                                            top: 0;
+                                            left: 150px;
+                                            .wpb_wrapper {
+                                                h3 {
+                                                    strong {
+                                                        color: $color-magenta;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &-5 {
+                        &>.vc_column-inner {
+                            height: 100%;
+                            &>.wpb_wrapper {
+                                height: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
+                                margin-bottom: 0;
+                                .wpb_text_column.wpb_content_element {
+                                    margin-bottom: 0;
+                                    &.cta-only-text-mnsm {
+                                        .wpb_wrapper {
+                                            p {
+                                                display: flex;
+                                                align-items: center;
+                                                flex-direction: row-reverse;
+                                                width: fit-content;
+                                                gap: 12px;
+                                                color: $color-ocra;
+                                                img {
+                                                    position: unset;
+                                                    float: unset;
+                                                    margin: unset;
                                                 }
                                             }
                                         }

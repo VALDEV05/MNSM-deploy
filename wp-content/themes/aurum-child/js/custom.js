@@ -18,10 +18,10 @@ function activeMenuFullPage() {
     const buttonToActiveMenu = jQuery(
         "body .site-header .container .row .col-md-6 .active-menu-full-page"
     );
-    /* const buttonToCloseMenu = jQuery(
-        "#lc-header .site-header .row-menu.mobile .right-menu-container .right-menu .activator-toggle-menu .closeMenu"
+    const buttonToCloseMenu = jQuery(
+        "body .site-header .container .row .col-md-6 .close-menu-full-page"
     );
-    const containerButton = jQuery(
+    /*const containerButton = jQuery(
         "#lc-header .site-header .row-menu.mobile .right-menu-container .right-menu .activator-toggle-menu"
     ); */
     const header = jQuery(".site-header");
@@ -42,12 +42,12 @@ function activeMenuFullPage() {
         jQuery(footer).addClass("activeMenuFullPage");
         jQuery(body).css("overflow-y", "hidden");
     });
-    /* jQuery(buttonToCloseMenu).click(function() {
+    jQuery(buttonToCloseMenu).click(function() {
         tl2.reverse();
         header.addClass("activeMenuFullPage").removeClass("activeMenuFullPage");
         footer.addClass("activeMenuFullPage").removeClass("activeMenuFullPage");
         body.css("overflow-y", "scroll");
-    }); */
+    });
 }
 
 function customMenuFullPage() {
