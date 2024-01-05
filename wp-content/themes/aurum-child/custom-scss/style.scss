@@ -602,6 +602,7 @@ header.site-header {
 }
 
 .site-footer {
+    margin-top: -2px;
     *,
     p,
     a {
@@ -1311,6 +1312,109 @@ body {
                     }
                 }
             }
+            &.section-mnsm-samoggia-dark {
+                padding-top: 90px;
+                display: flex;
+                flex-direction: column;
+                gap: 132px;
+                padding-bottom: 432px;
+                background-color: $color-background;
+                &>.container {
+                    .vc_row {
+                        .wpb_column.vc_column_container.vc_col-sm-8 {
+                            .vc_column-inner {
+                                .wpb_wrapper {
+                                    .wpb_text_column.wpb_content_element {
+                                        .wpb_wrapper {
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 32px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .vc_row {
+                    .wpb_column.vc_column_container.vc_col-sm-7 {
+                        .vc_column-inner {
+                            .wpb_wrapper {
+                                .wpb_single_image.wpb_content_element {
+                                    .wpb_wrapper {
+                                        .vc_single_image-wrapper {
+                                            img {
+                                                height: 600px!important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.section-mnsm-samoggia-light {
+                top: -300px;
+                display: flex;
+                flex-direction: column;
+                gap: 132px;
+                .vc_row {
+                    .wpb_column.vc_column_container.vc_col-sm-4 {
+                        .vc_column-inner {
+                            .wpb_wrapper {
+                                margin-bottom: 0;
+                                .wpb_text_column.wpb_content_element {
+                                    margin-bottom: 0;
+                                    .wpb_wrapper {
+                                        p {
+                                            color: $color-black;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:first-child {
+                        .wpb_column.vc_column_container.vc_col-sm-4 {
+                            .vc_column-inner {
+                                .wpb_wrapper {
+                                    margin-bottom: 0;
+                                    .wpb_text_column.wpb_content_element {
+                                        margin-bottom: 0;
+                                        .wpb_wrapper {
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 44px;
+                                            p {
+                                                color: $color-white;
+                                                &:last-child {
+                                                    color: $color-black;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .wpb_column.vc_column_container.vc_col-sm-7 {
+                        .vc_column-inner {
+                            .wpb_wrapper {
+                                .wpb_single_image.wpb_content_element {
+                                    .wpb_wrapper {
+                                        .vc_single_image-wrapper {
+                                            img {
+                                                height: 600px!important;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         .vc_row {
             &.row-main-content-mnsm-home-hero-section {
@@ -1401,6 +1505,25 @@ body {
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+
+/* PALAZZINA SAMOGGIA */
+
+.page-id-234 {
+    .page-container {
+        background-color: $color-grey-light;
+        .vc_section {
+            &.section-mnsm-title-visita-museo {
+                background-color: $color-background;
+                margin: 0;
+                padding: 32px 0;
+                &>.vc_row.row-element-mnsm-decoration-sheet-music {
+                    top: 47px;
                 }
             }
         }
