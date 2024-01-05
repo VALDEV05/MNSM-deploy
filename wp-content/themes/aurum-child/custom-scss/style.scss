@@ -1226,6 +1226,91 @@ body {
                     }
                 }
             }
+            &.section-mnsm-contatti {
+                .container {
+                    .vc_row {
+                        .wpb_column.vc_column_container.vc_col-sm-7 {
+                            &>.vc_column-inner {
+                                &>.wpb_wrapper {
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 44px;
+                                    .wpb_text_column.wpb_content_element {
+                                        margin-bottom: 0;
+                                        .wpb_wrapper {
+                                            h3 {
+                                                color: $color-magenta;
+                                                margin-bottom: 24px;
+                                            }
+                                            p {
+                                                &:last-child {
+                                                    margin-top: 32px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.section-mnsm-title-visita-museo {
+                margin: 32px 0;
+                &>.vc_row.row-element-mnsm-decoration-sheet-music {
+                    position: absolute;
+                    top: 15px;
+                    .wpb_column.vc_column_container.vc_col-sm-12 {
+                        padding: 0;
+                        .vc_column-inner {
+                            padding: 0;
+                            .wpb_wrapper {
+                                margin-bottom: 0;
+                                .wpb_single_image.wpb_content_element.vc_align_left {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .container {
+                    .vc_row {
+                        .wpb_column.vc_column_container.vc_col-sm {
+                            &-8,
+                            &-12 {
+                                .vc_column-inner {
+                                    .wpb_wrapper {
+                                        margin-bottom: 0;
+                                        .wpb_text_column.wpb_content_element {
+                                            &.custom-title-using-tag-for-style-home {
+                                                margin-bottom: 0;
+                                                .wpb_wrapper {
+                                                    h4 {
+                                                        strong {
+                                                            font-weight: 400;
+                                                            color: $color-magenta;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &-4 {
+                                .vc_column-inner {
+                                    .wpb_wrapper {
+                                        margin-bottom: 0;
+                                        .wpb_text_column.wpb_content_element {
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
         .vc_row {
             &.row-main-content-mnsm-home-hero-section {
@@ -1724,35 +1809,6 @@ body.page-template-visita-il-museo {
                                                         a {
                                                             color: $color-ocra;
                                                         }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-                &.section-mnsm-contatti {
-                    .container {
-                        .vc_row {
-                            .wpb_column.vc_column_container.vc_col-sm-7 {
-                                &>.vc_column-inner {
-                                    &>.wpb_wrapper {
-                                        display: flex;
-                                        flex-direction: column;
-                                        gap: 44px;
-                                        .wpb_text_column.wpb_content_element {
-                                            margin-bottom: 0;
-                                            .wpb_wrapper {
-                                                h3 {
-                                                    color: $color-magenta;
-                                                    margin-bottom: 24px;
-                                                }
-                                                p {
-                                                    &:last-child {
-                                                        margin-top: 32px;
                                                     }
                                                 }
                                             }
