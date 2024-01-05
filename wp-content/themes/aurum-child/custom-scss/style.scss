@@ -331,7 +331,8 @@ h2 {
 }
 
 .cta-only-text-mnsm {
-    p {
+    p,
+    a {
         font-size: 18px;
         font-style: normal;
         font-weight: 700;
@@ -1254,7 +1255,21 @@ body.single-strum {
                 line-height: 24px;
                 padding-bottom: 16px;
             }
+            &_link {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                padding: 0 16.6%;
+                a.read-more {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    color: $color-ocra;
+                }
+            }
             &_container-info {
+                padding: 64px 0;
                 .row {
                     .col-md-6 {
                         padding: 0;
