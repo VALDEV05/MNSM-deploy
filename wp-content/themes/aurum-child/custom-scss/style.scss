@@ -12,6 +12,7 @@
 *  6.0 - Footer
 *  7.0 - Menu Full Page
 *  8.0 - Pages Custom Css
+*  9.0 - CPT Strum
 *  -1.0 - Responsive
 *
 ***
@@ -1194,6 +1195,75 @@ body {
                                     margin-bottom: 0;
                                 }
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+        9.0 - CPT Strum
+   ========================================================================== */
+
+body.single-strum {
+    color: $color-black;
+    header.site-header {
+        border-bottom: 2px solid $color-grey;
+    }
+    .container-strum {
+        .container-strum {
+            &_gallery {
+                padding: 32px 0;
+                display: flex;
+                gap: 12px;
+                justify-content: center;
+            }
+            &_title {
+                padding: 32px 0;
+                h1 {
+                    font-size: 45px;
+                    font-style: normal;
+                    font-weight: 700;
+                    color: $color-black;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+            }
+            &_description {
+                padding: 0 16.6%;
+                p {
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 149.1%
+                }
+            }
+            &_subtitle {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 24px;
+            }
+            &_element-dynamic {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px;
+                padding-bottom: 16px;
+            }
+            &_container-info {
+                .row {
+                    .col-md-6 {
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+                        .container-strum_inventario-mnsm {
+                            border-bottom: 2px solid $color-grey;
+                            padding-left: 8.3%;
                         }
                     }
                 }

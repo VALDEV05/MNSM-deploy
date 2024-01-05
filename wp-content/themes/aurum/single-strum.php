@@ -13,4 +13,4 @@ get_header();
 
 get_template_part( 'tpls/single-strum_custom' );
 
-get_footer();
+/* get_footer(); */
