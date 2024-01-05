@@ -476,6 +476,14 @@ header.site-header {
                         position: absolute;
                         left: 50%;
                         transform: translateX(-50%);
+                        .date {
+                            font-weight: 600;
+                        }
+                        .mb-bhi-display {
+                            .mb-bhi-oc-text {
+                                font-weight: 800;
+                            }
+                        }
                     }
                 }
             }
