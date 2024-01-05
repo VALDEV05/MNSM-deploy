@@ -2,6 +2,7 @@ function init() {
     branding();
     activeMenuFullPage();
     customMenuFullPage();
+    customMenuVisitaMuseo();
 }
 
 function branding() {
@@ -79,4 +80,23 @@ function customMenuFullPage() {
     })
 }
 
+function customMenuVisitaMuseo() {
+    if (jQuery("body").hasClass('page-template-visita-il-museo')) {
+        const containerMenu = jQuery('.menu-visita-museo-navigation-container #menu-visita-museo-navigation li.menu-item');
+        const elementToAdd = `<div class="icon-list-custom-menu-visita-museo_dynamic">
+        <svg width="51" height="12" viewBox="0 0 51 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M39.6667 6C39.6667 8.94552 42.0545 11.3333 45 11.3333C47.9455 11.3333 50.3333 8.94552 50.3333 6C50.3333 3.05448 47.9455 0.666667 45 0.666667C42.0545 0.666667 39.6667 3.05448 39.6667 6ZM-5 7H45V5H-5V7Z"
+                fill="#AF183E" />
+        </svg>
+    </div>
+        `
+        jQuery(containerMenu).each((i) => {
+            const containerMenuItem = jQuery(containerMenu)[i];
+            const containerMenuItemTagLink = jQuery(containerMenuItem).children('a');
+            jQuery(containerMenuItemTagLink).prepend(elementToAdd);
+        })
+
+    }
+}
 jQuery(document).ready(init);

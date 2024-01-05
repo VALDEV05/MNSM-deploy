@@ -13,6 +13,7 @@
 *  7.0 - Menu Full Page
 *  8.0 - Pages Custom Css
 *  9.0 - CPT Strum
+* 10.0 - Visita Museo
 *  -1.0 - Responsive
 *
 ***
@@ -27,6 +28,7 @@
 /* Colors palette */
 
 $color-magenta: #b91345;
+$color-magenta-dark: #AF183E;
 $color-orange-light: #ca6a00;
 $color-ocra: #e9ad00;
 $color-yellow: #d3c47a;
@@ -34,7 +36,7 @@ $color-black: #000000;
 $color-white: #ffffff;
 $color-orange: #dc4627;
 $color-grey: #2b2b2b;
-$color-grey-light: #E2E0DC;
+$color-grey-light: #e2e0dc;
 $color-background: #161513;
 
 /* ==========================================================================
@@ -192,6 +194,11 @@ body {
     margin: 0 auto;
 }
 
+.vc_section {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
 
 /* ==========================================================================
 		3.0 - Fonts
@@ -234,7 +241,8 @@ body {
             text-decoration: none;
         }
     }
-    p {
+    p,
+    h6 {
         font-size: 18px;
         font-style: normal;
         font-weight: 500;
@@ -342,6 +350,108 @@ h2 {
     &_yellow {
         p {
             color: $color-ocra;
+        }
+    }
+}
+
+.row-mnsm-newsletter {
+    .wpb_column.vc_column_container.vc_col-sm-10 {
+        background-image: url("../../../../wp-content/uploads/2024/01/element-decoration-mnsm-row-newsletter.png");
+        padding: 300px 0;
+        margin: 64px 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        &>.vc_column-inner {
+            &>.wpb_wrapper {
+                margin-bottom: 0;
+                &>.vc_row {
+                    .wpb_column.vc_column_container.vc_col-sm-6 {
+                        &.container-form {
+                            .vc_column-inner {
+                                .wpb_wrapper {
+                                    width: 70%;
+                                    margin: 0 auto;
+                                    #gform_1 {
+                                        .gform {
+                                            &_body {
+                                                .gform_fields {
+                                                    .gfield {
+                                                        &_label {
+                                                            color: $color-background;
+                                                            font-size: 9.667px;
+                                                            font-style: normal;
+                                                            font-weight: 400;
+                                                            line-height: 21.75px;
+                                                            .gfield_required {
+                                                                display: none;
+                                                            }
+                                                        }
+                                                        .ginput_container.ginput_container_email {
+                                                            input {
+                                                                border-radius: 27.004px;
+                                                                border: 1px solid $color-background;
+                                                                background: transparent;
+                                                                padding-left: 27px;
+                                                                &::placeholder {
+                                                                    color: $color-background;
+                                                                    opacity: 1;
+                                                                    font-size: 9.667px;
+                                                                    font-style: normal;
+                                                                    font-weight: 400;
+                                                                    line-height: 21.75px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &_footer {
+                                                input {
+                                                    border: 0px;
+                                                    border-radius: 27.004px;
+                                                    background-color: $color-magenta;
+                                                    font-size: 17.798px;
+                                                    font-style: normal;
+                                                    font-weight: 400;
+                                                    line-height: 26.697px;
+                                                    padding: 12px 0;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &:first-child {
+                            .vc_column-inner {
+                                height: 100%;
+                                .wpb_wrapper {
+                                    height: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 0;
+                                    .wpb_text_column.wpb_content_element {
+                                        margin-bottom: 0;
+                                        .wpb_wrapper {
+                                            p {
+                                                color: $color-magenta;
+                                                font-size: 35px;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                line-height: 42.146px;
+                                                strong {
+                                                    font-weight: 500;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -743,7 +853,7 @@ body {
             }
             &.section-mnsm-home-info-ticket {
                 background: rgb(226, 224, 220);
-                background: linear-gradient(180deg, rgba(226, 224, 220, 0) 0%, rgba(226, 224, 220, 1) 0%, rgba(226, 224, 220, 1) calc(100% - 300px), rgba(226, 224, 220, 0) calc(100% - 300px));
+                background: linear-gradient( 180deg, rgba(226, 224, 220, 0) 0%, rgba(226, 224, 220, 1) 0%, rgba(226, 224, 220, 1) calc(100% - 300px), rgba(226, 224, 220, 0) calc(100% - 300px));
                 margin: 350px 0 0;
                 .vc_row {
                     &:first-child {
@@ -754,7 +864,7 @@ body {
                                     .wpb_wrapper {
                                         .wpb_single_image.wpb_content_element.vc_align_left {
                                             img {
-                                                height: 600px!important;
+                                                height: 600px !important;
                                             }
                                         }
                                     }
@@ -806,7 +916,7 @@ body {
                                     .wpb_wrapper {
                                         .wpb_single_image.wpb_content_element.vc_align_left {
                                             img {
-                                                height: 600px!important;
+                                                height: 600px !important;
                                             }
                                         }
                                     }
@@ -1006,7 +1116,7 @@ body {
                         }
                         &.row-mnsm-newsletter {
                             .wpb_column.vc_column_container.vc_col-sm-10 {
-                                background-image: url('../../../../wp-content/uploads/2024/01/element-decoration-mnsm-row-newsletter.png');
+                                background-image: url("../../../../wp-content/uploads/2024/01/element-decoration-mnsm-row-newsletter.png");
                                 padding: 300px 0;
                                 margin: 64px 0;
                                 background-size: contain;
@@ -1239,7 +1349,7 @@ body.single-strum {
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 500;
-                    line-height: 149.1%
+                    line-height: 149.1%;
                 }
             }
             &_subtitle {
@@ -1279,6 +1389,369 @@ body.single-strum {
                         .container-strum_inventario-mnsm {
                             border-bottom: 2px solid $color-grey;
                             padding-left: 8.3%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+        10.0 - Visita Museo
+   ========================================================================== */
+
+body.page-template-visita-il-museo {
+    .page-container.standalone-container.visita-museo-template {
+        .wpb-content-wrapper {
+            .vc_section {
+                &.section-mnsm-title-visita-museo {
+                    margin: 32px 0;
+                    &>.vc_row.row-element-mnsm-decoration-sheet-music {
+                        position: absolute;
+                        top: 15px;
+                        .wpb_column.vc_column_container.vc_col-sm-12 {
+                            padding: 0;
+                            .vc_column-inner {
+                                padding: 0;
+                                .wpb_wrapper {
+                                    margin-bottom: 0;
+                                    .wpb_single_image.wpb_content_element.vc_align_left {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .container {
+                        .vc_row {
+                            .wpb_column.vc_column_container.vc_col-sm {
+                                &-8 {
+                                    .vc_column-inner {
+                                        .wpb_wrapper {
+                                            margin-bottom: 0;
+                                            .wpb_text_column.wpb_content_element {
+                                                &.custom-title-using-tag-for-style-home {
+                                                    margin-bottom: 0;
+                                                    .wpb_wrapper {
+                                                        h4 {
+                                                            strong {
+                                                                font-weight: 400;
+                                                                color: $color-magenta;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &-4 {
+                                    .vc_column-inner {
+                                        .wpb_wrapper {
+                                            margin-bottom: 0;
+                                            .wpb_text_column.wpb_content_element {
+                                                margin-bottom: 0;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.section-mnsm-main-content-visita-museo {
+                    padding-bottom: 500px;
+                    .vc_row {
+                        .wpb_column.vc_column_container.vc_col-sm {
+                            &-6 {
+                                &>.vc_column-inner {
+                                    &>.wpb_wrapper {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 64px;
+                                        .wpb_text_column.wpb_content_element {
+                                            margin-bottom: 0;
+                                            .wpb_wrapper {
+                                                h3 {
+                                                    color: $color-magenta;
+                                                }
+                                                ul {
+                                                    li {
+                                                        font-size: 18px;
+                                                        font-style: normal;
+                                                        font-weight: 500;
+                                                        line-height: 149.1%;
+                                                    }
+                                                    margin-bottom: 32px;
+                                                }
+                                                p {
+                                                    em {
+                                                        font-style: normal;
+                                                        strong {
+                                                            font-weight: unset;
+                                                            color: $color-ocra;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &:last-child {
+                                                .wpb_wrapper {
+                                                    p {
+                                                        strong {
+                                                            font-weight: 500;
+                                                            em {
+                                                                font-style: normal;
+                                                                color: $color-magenta-dark;
+                                                            }
+                                                        }
+                                                        em {
+                                                            font-style: normal;
+                                                            strong {
+                                                                font-weight: 800;
+                                                                color: unset;
+                                                            }
+                                                        }
+                                                        a {
+                                                            color: $color-ocra;
+                                                        }
+                                                        &:last-child {
+                                                            margin-top: 32px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &-3 {
+                                padding: 0;
+                                .vc_column-inner {
+                                    padding: 0;
+                                    .wpb_wrapper {
+                                        margin-bottom: 0;
+                                        .vc_wp_custommenu.wpb_content_element {
+                                            margin-bottom: 0;
+                                            .widget.widget_nav_menu {
+                                                .menu-visita-museo-navigation-container {
+                                                    #menu-visita-museo-navigation {
+                                                        list-style: none;
+                                                        padding-left: 0;
+                                                        li {
+                                                            a {
+                                                                display: flex;
+                                                                align-items: center;
+                                                                gap: 12px;
+                                                            }
+                                                            &.menu-item {
+                                                                &-203 {
+                                                                    a {
+                                                                        color: $color-magenta;
+                                                                    }
+                                                                    .icon-list-custom-menu-visita-museo_dynamic {
+                                                                        svg,
+                                                                        svg * {
+                                                                            fill: $color-magenta;
+                                                                        }
+                                                                    }
+                                                                }
+                                                                &-202 {
+                                                                    a {
+                                                                        color: $color-yellow;
+                                                                    }
+                                                                    .icon-list-custom-menu-visita-museo_dynamic {
+                                                                        svg,
+                                                                        svg * {
+                                                                            fill: $color-yellow;
+                                                                        }
+                                                                    }
+                                                                }
+                                                                &-201 {
+                                                                    a {
+                                                                        color: $color-ocra;
+                                                                    }
+                                                                    .icon-list-custom-menu-visita-museo_dynamic {
+                                                                        svg,
+                                                                        svg * {
+                                                                            fill: $color-ocra;
+                                                                        }
+                                                                    }
+                                                                }
+                                                                &-200 {
+                                                                    a {
+                                                                        color: $color-orange-light;
+                                                                    }
+                                                                    .icon-list-custom-menu-visita-museo_dynamic {
+                                                                        svg,
+                                                                        svg * {
+                                                                            fill: $color-orange-light;
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &_dove-siamo {
+                        .vc_row {
+                            .wpb_column.vc_column_container.vc_col-sm {
+                                &-6 {
+                                    &>.vc_column-inner {
+                                        &>.wpb_wrapper {
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 64px;
+                                            .wpb_text_column.wpb_content_element {
+                                                margin-bottom: 0;
+                                                &:first-child {
+                                                    .wpb_wrapper {
+                                                        p:last-child {
+                                                            margin-top: 32px;
+                                                            a {
+                                                                color: $color-white;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .wpb_wrapper {
+                                                    h3 {
+                                                        color: $color-ocra;
+                                                    }
+                                                    p {
+                                                        em {
+                                                            strong {
+                                                                color: $color-ocra;
+                                                            }
+                                                        }
+                                                        strong {
+                                                            font-weight: 800!important;
+                                                        }
+                                                        a {
+                                                            color: $color-ocra;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &_orari {
+                        .vc_row {
+                            .wpb_column.vc_column_container.vc_col-sm {
+                                &-6 {
+                                    &>.vc_column-inner {
+                                        &>.wpb_wrapper {
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 64px;
+                                            .wpb_text_column.wpb_content_element {
+                                                margin-bottom: 0;
+                                                .wpb_wrapper {
+                                                    h3 {
+                                                        color: $color-yellow;
+                                                    }
+                                                    p {
+                                                        a {
+                                                            color: $color-yellow;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &_gruppi {
+                        .vc_row {
+                            .wpb_column.vc_column_container.vc_col-sm {
+                                &-6 {
+                                    &>.vc_column-inner {
+                                        &>.wpb_wrapper {
+                                            display: flex;
+                                            flex-direction: column;
+                                            gap: 64px;
+                                            .wpb_text_column.wpb_content_element {
+                                                margin-bottom: 0;
+                                                &>.wpb_wrapper {
+                                                    ul {
+                                                        margin-bottom: 0;
+                                                    }
+                                                    &>p {
+                                                        &:not(:last-child) {
+                                                            margin-bottom: 32px;
+                                                        }
+                                                    }
+                                                    h3 {
+                                                        color: $color-orange-light;
+                                                    }
+                                                    p {
+                                                        em {
+                                                            strong {
+                                                                color: $color-magenta-dark!important;
+                                                                font-weight: normal!important;
+                                                            }
+                                                        }
+                                                        strong {
+                                                            font-weight: 800!important;
+                                                        }
+                                                        a {
+                                                            color: $color-orange-light;
+                                                        }
+                                                    }
+                                                    li {
+                                                        a {
+                                                            color: $color-ocra;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &.section-mnsm-contatti {
+                    .container {
+                        .vc_row {
+                            .wpb_column.vc_column_container.vc_col-sm-7 {
+                                &>.vc_column-inner {
+                                    &>.wpb_wrapper {
+                                        display: flex;
+                                        flex-direction: column;
+                                        gap: 44px;
+                                        .wpb_text_column.wpb_content_element {
+                                            margin-bottom: 0;
+                                            .wpb_wrapper {
+                                                h3 {
+                                                    color: $color-magenta;
+                                                    margin-bottom: 24px;
+                                                }
+                                                p {
+                                                    &:last-child {
+                                                        margin-top: 32px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
