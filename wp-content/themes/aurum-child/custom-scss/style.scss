@@ -1996,13 +1996,47 @@ body.page-template-visita-il-museo {
             .site-header_top-bar {
                 .container {
                     .row {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 8px 0;
                         .text-centered {
                             .text-complete {
                                 display: none;
                             }
                             .text-small-for-mobile {
                                 display: block;
+                                .date {
+                                    font-weight: 600;
+                                }
+                                .mb-bhi-display {
+                                    .mb-bhi-oc-text {
+                                        font-weight: 800;
+                                    }
+                                }
                             }
+                        }
+                        .social-menu_widget {
+                            ul {
+                                gap: 4px;
+                            }
+                        }
+                    }
+                }
+            }
+            .mobile-logo {
+                background-color: $color-grey-light;
+                .container-header-logo-secondary {
+                    display: flex;
+                    gap: 32px;
+                    align-items: center;
+                    &>div {
+                        display: unset;
+                        img {
+                            width: 140px;
+                            height: auto;
+                        }
+                        &.container-header-logo-secondary_second-logo {
+                            filter: invert(1);
                         }
                     }
                 }

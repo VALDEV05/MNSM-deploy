@@ -102,8 +102,7 @@ function customMenuVisitaMuseo() {
 }
 
 function mobileAdjustOpeningHours() {
-    const pageWidth = jQuery(window).width();
-    if (jQuery(pageWidth) < '580') {
+    if (jQuery(window).width() < 600) {
         const containerTopBar = jQuery('body .mobile-menu.mobile-menu_custom .site-header_top-bar .container .row .text-centered .text-small-for-mobile .mb-bhi-display');
         console.log('====================================');
         console.log(containerTopBar);
