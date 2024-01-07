@@ -4,6 +4,7 @@ function init() {
     customMenuFullPage();
     customMenuVisitaMuseo();
     mobileAdjustOpeningHours();
+    activeMenuFullPageMobile();
 }
 
 function branding() {
@@ -104,12 +105,50 @@ function customMenuVisitaMuseo() {
 function mobileAdjustOpeningHours() {
     if (jQuery(window).width() < 600) {
         const containerTopBar = jQuery('body .mobile-menu.mobile-menu_custom .site-header_top-bar .container .row .text-centered .text-small-for-mobile .mb-bhi-display');
-        console.log('====================================');
-        console.log(containerTopBar);
-        console.log('====================================');
         if (jQuery(containerTopBar).hasClass('mb-bhi-open')) {
             jQuery(containerTopBar).children('.mb-bhi-oc-text').text('siamo aperti');
         }
+    }
+}
+
+function activeMenuFullPageMobile() {
+    if (jQuery(window).width() < 600) {
+        const buttonToActiveMenu = jQuery(
+            "body .mobile-menu.mobile-menu_custom .mobile-logo .container .row .active-menu-full-page_mobile"
+        );
+        const buttonToCloseMenu = jQuery(
+            "body .mobile-menu.mobile-menu_custom .mobile-logo .container .row .close-menu-full-page_mobile"
+        );
+        console.log('====================================');
+        console.log(buttonToActiveMenu, buttonToCloseMenu);
+        console.log('====================================');
+        /*const containerButton = jQuery(
+            "#lc-header .site-header .row-menu.mobile .right-menu-container .right-menu .activator-toggle-menu"
+        ); */
+        const header = jQuery(".mobile-menu.mobile-menu_custom");
+        const footer = jQuery(".site-footer");
+        const body = jQuery("body");
+        const tl2 = gsap.timeline({
+            paused: true,
+        });
+        tl2.to(".menu-full-page-custom-mnsm", {
+            zIndex: 99,
+            opacity: 1,
+            duration: 0.7,
+            ease: "expo.inOut",
+        });
+        jQuery(buttonToActiveMenu).click(function() {
+            tl2.play();
+            jQuery(header).addClass("activeMenuFullPageMobile");
+            jQuery(footer).addClass("activeMenuFullPageMobile");
+            jQuery(body).css("overflow-y", "hidden");
+        });
+        jQuery(buttonToCloseMenu).click(function() {
+            tl2.reverse();
+            header.addClass("activeMenuFullPageMobile").removeClass("activeMenuFullPageMobile");
+            footer.addClass("activeMenuFullPageMobile").removeClass("activeMenuFullPageMobile");
+            body.css("overflow-y", "scroll");
+        });
     }
 }
 jQuery(document).ready(init);

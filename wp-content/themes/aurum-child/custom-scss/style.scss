@@ -1991,6 +1991,44 @@ body.page-template-visita-il-museo {
 
 @media (max-width: 575.98px) {
     body {
+        .container {
+            width: calc(100% - 60px)!important;
+            max-width: calc(100% - 60px)!important;
+            padding: 0 !important;
+            .row {
+                &>* {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+        .menu-full-page-custom-mnsm {
+            background: $color-background;
+            opacity: 1!important;
+            z-index: 1!important;
+            .container_custom-menu-full-page {
+                .container-menu {
+                    top: 130px;
+                    left: unset;
+                    transform: unset;
+                    right: 30px;
+                    .main-menu {
+                        &>ul {
+                            align-items: flex-end;
+                            li.menu-item {
+                                a {
+                                    padding: 0;
+                                    font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .container_custom-menu-full-page_element-background {
+                    display: none;
+                }
+            }
+        }
         header.mobile-menu {
             background-color: $color-background;
             .site-header_top-bar {
@@ -2004,6 +2042,7 @@ body.page-template-visita-il-museo {
                                 display: none;
                             }
                             .text-small-for-mobile {
+                                padding-left: 16px;
                                 display: block;
                                 .date {
                                     font-weight: 600;
@@ -2025,18 +2064,54 @@ body.page-template-visita-il-museo {
             }
             .mobile-logo {
                 background-color: $color-grey-light;
-                .container-header-logo-secondary {
-                    display: flex;
-                    gap: 32px;
-                    align-items: center;
-                    &>div {
-                        display: unset;
-                        img {
-                            width: 140px;
-                            height: auto;
+                .container {
+                    .row {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .close-menu-full-page_mobile {
+                            display: none;
                         }
-                        &.container-header-logo-secondary_second-logo {
-                            filter: invert(1);
+                        .active-menu-full-page_mobile,
+                        .close-menu-full-page_mobile {
+                            width: 32px;
+                            max-width: 32px;
+                            svg {
+                                max-width: 100%;
+                            }
+                        }
+                        .container-header-logo-secondary {
+                            display: flex;
+                            gap: 8px;
+                            align-items: center;
+                            width: 280px;
+                            max-width: 280px;
+                            &>div {
+                                display: unset;
+                                img {
+                                    width: 140px;
+                                    height: auto;
+                                }
+                                &.container-header-logo-secondary_second-logo {
+                                    filter: invert(1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            position: relative;
+            z-index: 99;
+            &.activeMenuFullPageMobile {
+                position: relative;
+                z-index: 99;
+                .container {
+                    .row {
+                        .close-menu-full-page_mobile {
+                            display: block;
+                        }
+                        .active-menu-full-page_mobile {
+                            display: none;
                         }
                     }
                 }
