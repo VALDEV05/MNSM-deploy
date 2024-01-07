@@ -2062,6 +2062,41 @@ body.page-template-visita-il-museo {
                     }
                 }
             }
+            .site-bottom-bar {
+                background-color: $color-grey-light;
+                position: fixed;
+                bottom: 0;
+                height: 72px;
+                width: 100vw;
+                display: flex;
+                align-items: center;
+                .container {
+                    .row {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: nowrap;
+                    }
+                }
+                .button-custom-acquista-biglietti {
+                    width: fit-content;
+                    max-width: fit-content;
+                    &:first-child {
+                        padding-left: 60px;
+                    }
+                    .text {
+                        width: 50%;
+                    }
+                    gap: 0;
+                    a {
+                        display: flex;
+                        align-items: baseline;
+                        gap: 8px;
+                    }
+                    align-items: baseline;
+                    gap: 8px;
+                }
+            }
             .mobile-logo {
                 background-color: $color-grey-light;
                 .container {
