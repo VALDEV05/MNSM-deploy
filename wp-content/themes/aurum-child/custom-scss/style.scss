@@ -808,6 +808,10 @@ body {
             position: relative;
             padding: 0;
             &.hero-home-mnsm {
+                &>.container {
+                    position: relative;
+                    z-index: 1;
+                }
                 &>.vc_row {
                     &.row-content-script-home {
                         width: fit-content;
@@ -854,7 +858,7 @@ body {
                     }
                     &.row-element-decoration-mnsm-home-hero {
                         position: absolute;
-                        z-index: -1;
+                        z-index: 0;
                         top: 0;
                         left: 0;
                     }
@@ -1985,7 +1989,34 @@ body.page-template-visita-il-museo {
 
 /* Small applies to x-small devices (portrait phones, less than 576px) */
 
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+    body {
+        header.mobile-menu {
+            background-color: $color-background;
+            .site-header_top-bar {
+                .container {
+                    .row {
+                        .text-centered {
+                            .text-complete {
+                                display: none;
+                            }
+                            .text-small-for-mobile {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .page-container {
+            display: none;
+        }
+    }
+    .site-footer,
+    .site-footer-element-decoration {
+        display: none
+    }
+}
 
 
 /* Small applies to x-small devices (portrait phones, less than 321px) */

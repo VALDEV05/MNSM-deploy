@@ -94,6 +94,27 @@ function timestamp_to_date_italian($month_number)
 }
 
 
+function timestamp_to_date_italian_mobile($month_number)
+{       
+    $months_italian = array(
+            '01' => 'Gen', 
+            '02' => 'Feb', 
+            '03' => 'Mar', 
+            '04' => 'Apr',
+            '05' => 'Mag', 
+            '06' => 'Giu', 
+            '07' => 'Lug', 
+            '08' => 'Ago',
+            '09' => 'Set', 
+            '10' => 'Ott', 
+            '11' => 'Nov',
+            '12' => 'Dic');
+
+          
+    return $months_italian[$month_number];
+
+}
+
 
 
 

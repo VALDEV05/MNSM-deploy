@@ -3,6 +3,7 @@ function init() {
     activeMenuFullPage();
     customMenuFullPage();
     customMenuVisitaMuseo();
+    mobileAdjustOpeningHours();
 }
 
 function branding() {
@@ -97,6 +98,19 @@ function customMenuVisitaMuseo() {
             jQuery(containerMenuItemTagLink).prepend(elementToAdd);
         })
 
+    }
+}
+
+function mobileAdjustOpeningHours() {
+    const pageWidth = jQuery(window).width();
+    if (jQuery(pageWidth) < '580') {
+        const containerTopBar = jQuery('body .mobile-menu.mobile-menu_custom .site-header_top-bar .container .row .text-centered .text-small-for-mobile .mb-bhi-display');
+        console.log('====================================');
+        console.log(containerTopBar);
+        console.log('====================================');
+        if (jQuery(containerTopBar).hasClass('mb-bhi-open')) {
+            jQuery(containerTopBar).children('.mb-bhi-oc-text').text('siamo aperti');
+        }
     }
 }
 jQuery(document).ready(init);

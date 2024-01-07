@@ -22,7 +22,8 @@ $menu = wp_nav_menu( array(
 	'echo' => false
 ) );
 ?>
-<header class="mobile-menu<?php echo $header_sticky_menu_mobile ? ' sticky-mobile' : ''; ?>">
+<header class="mobile-menu mobile-menu_custom">
+	<?php get_template_part( 'tpls/header-top-bar' );?>
 
 	<section class="mobile-logo">
 	
