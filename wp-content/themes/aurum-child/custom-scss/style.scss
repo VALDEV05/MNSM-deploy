@@ -28,7 +28,7 @@
 /* Colors palette */
 
 $color-magenta: #b91345;
-$color-magenta-dark: #AF183E;
+$color-magenta-dark: #af183e;
 $color-orange-light: #ca6a00;
 $color-ocra: #e9ad00;
 $color-yellow: #d3c47a;
@@ -1351,7 +1351,7 @@ body {
                                     .wpb_wrapper {
                                         .vc_single_image-wrapper {
                                             img {
-                                                height: 600px!important;
+                                                height: 600px !important;
                                             }
                                         }
                                     }
@@ -1412,7 +1412,7 @@ body {
                                     .wpb_wrapper {
                                         .vc_single_image-wrapper {
                                             img {
-                                                height: 600px!important;
+                                                height: 600px !important;
                                             }
                                         }
                                     }
@@ -1856,7 +1856,7 @@ body.page-template-visita-il-museo {
                                                             }
                                                         }
                                                         strong {
-                                                            font-weight: 800!important;
+                                                            font-weight: 800 !important;
                                                         }
                                                         a {
                                                             color: $color-ocra;
@@ -1924,12 +1924,12 @@ body.page-template-visita-il-museo {
                                                     p {
                                                         em {
                                                             strong {
-                                                                color: $color-magenta-dark!important;
-                                                                font-weight: normal!important;
+                                                                color: $color-magenta-dark !important;
+                                                                font-weight: normal !important;
                                                             }
                                                         }
                                                         strong {
-                                                            font-weight: 800!important;
+                                                            font-weight: 800 !important;
                                                         }
                                                         a {
                                                             color: $color-orange-light;
@@ -1993,10 +1993,22 @@ body.page-template-visita-il-museo {
 /* Small applies to x-small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {
+    /* ==========================================================================
+		1.0 - Variables & Components
+   ========================================================================== */
+    /* ==========================================================================
+		2.0 - Reset
+   ========================================================================== */
+    /* ==========================================================================
+        3.0 - Fonts
+   ========================================================================== */
+    /* ==========================================================================
+        4.0 - Globals
+   ========================================================================== */
     body {
         .container {
-            width: calc(100% - 60px)!important;
-            max-width: calc(100% - 60px)!important;
+            width: calc(100% - 60px) !important;
+            max-width: calc(100% - 60px) !important;
             padding: 0 !important;
             .row {
                 &>* {
@@ -2005,33 +2017,11 @@ body.page-template-visita-il-museo {
                 }
             }
         }
-        .menu-full-page-custom-mnsm {
-            background: $color-background;
-            opacity: 1!important;
-            z-index: 1!important;
-            .container_custom-menu-full-page {
-                .container-menu {
-                    top: 130px;
-                    left: unset;
-                    transform: unset;
-                    right: 30px;
-                    .main-menu {
-                        &>ul {
-                            align-items: flex-end;
-                            li.menu-item {
-                                a {
-                                    padding: 0;
-                                    font-size: 24px;
-                                }
-                            }
-                        }
-                    }
-                }
-                .container_custom-menu-full-page_element-background {
-                    display: none;
-                }
-            }
-        }
+    }
+    /* ==========================================================================
+        5.0 - Header
+   ========================================================================== */
+    body {
         header.mobile-menu {
             background-color: $color-background;
             .site-header_top-bar {
@@ -2155,14 +2145,75 @@ body.page-template-visita-il-museo {
                 }
             }
         }
-        .page-container {
-            display: none;
+    }
+    /* ==========================================================================
+        6.0 - Footer     
+   ========================================================================== */
+    /* ==========================================================================
+        7.0 - Menu Full Page
+   ========================================================================== */
+    body {
+        .menu-full-page-custom-mnsm {
+            background: $color-background;
+            opacity: 1 !important;
+            z-index: 1 !important;
+            .container_custom-menu-full-page {
+                .container-menu {
+                    top: 130px;
+                    left: unset;
+                    transform: unset;
+                    right: 30px;
+                    .main-menu {
+                        &>ul {
+                            align-items: flex-end;
+                            gap: 8px;
+                            padding: 8px 0;
+                            li.menu-item {
+                                a {
+                                    padding: 0;
+                                    font-size: 24px;
+                                }
+                                &.activeVoiceMenu {
+                                    &>.sub-menu {
+                                        position: absolute;
+                                        top: 45%;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                        background-color: $color-white;
+                                        width: 100vw;
+                                        height: 50vh;
+                                        padding-left: 0;
+                                        li {
+                                            margin-left: auto;
+                                            margin-right: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .container_custom-menu-full-page_element-background {
+                    display: none;
+                    .strumento-musicale {
+                        img {
+                            left: 0;
+                            transform: translateX(unset);
+                        }
+                    }
+                }
+            }
         }
     }
-    .site-footer,
-    .site-footer-element-decoration {
-        display: none
-    }
+    /* ==========================================================================
+        8.0 - Pages Custom Css
+   ========================================================================== */
+    /* ==========================================================================
+        9.0 - CPT Strum
+   ========================================================================== */
+    /* ==========================================================================
+        10.0 - Visita Museo
+   ========================================================================== */
 }
 
 
