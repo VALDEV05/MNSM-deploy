@@ -960,7 +960,24 @@ body {
                                             }
                                             &.custom-text-using-tag-for-style-home {
                                                 .wpb_wrapper {
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    gap: 24px;
                                                     p {
+                                                        &:first-child {
+                                                            em {
+                                                                font-style: normal;
+                                                                strong {
+                                                                    font-weight: 400;
+                                                                    color: $color-magenta;
+                                                                }
+                                                            }
+                                                        }
+                                                        &:last-child {
+                                                            em {
+                                                                font-style: normal;
+                                                            }
+                                                        }
                                                         color: $color-background;
                                                         strong {
                                                             font-weight: 500;
@@ -2006,6 +2023,13 @@ body.page-template-visita-il-museo {
         4.0 - Globals
    ========================================================================== */
     body {
+        .row {
+            .vc_col-xs {
+                &-12 {
+                    width: 100%;
+                }
+            }
+        }
         .container {
             width: calc(100% - 60px) !important;
             max-width: calc(100% - 60px) !important;
@@ -2016,6 +2040,21 @@ body.page-template-visita-il-museo {
                     padding-right: 0;
                 }
             }
+        }
+        h1 {
+            font-size: 60px;
+            strong {
+                font-weight: 600;
+            }
+        }
+        h2 {
+            font-size: 50px;
+        }
+        h3 {
+            font-size: 17px;
+        }
+        h4 {
+            font-size: 50px;
         }
     }
     /* ==========================================================================
@@ -2149,14 +2188,18 @@ body.page-template-visita-il-museo {
     /* ==========================================================================
         6.0 - Footer     
    ========================================================================== */
+    body {
+        .site-footer,
+        .site-footer-element-decoration {
+            display: none;
+        }
+    }
     /* ==========================================================================
         7.0 - Menu Full Page
    ========================================================================== */
     body {
         .menu-full-page-custom-mnsm {
             background: $color-background;
-            opacity: 1 !important;
-            z-index: 1 !important;
             .container_custom-menu-full-page {
                 .container-menu {
                     top: 130px;
@@ -2208,13 +2251,188 @@ body.page-template-visita-il-museo {
     /* ==========================================================================
         8.0 - Pages Custom Css
    ========================================================================== */
-    /* ==========================================================================
+    body {
+        .page-container {
+            .wpb-content-wrapper {
+                .vc_section {
+                    &.hero-home-mnsm {
+                        height: calc(100vh - 200px);
+                        &>.vc_row.row-content-script-home {
+                            padding: 0;
+                            left: 30px;
+                            .wpb_column.vc_column_container.vc_col-sm-12 {
+                                padding: 0;
+                                .vc_column-inner {
+                                    padding: 0;
+                                    &>.wpb_wrapper {
+                                        .wpb_text_column.wpb_content_element.custom-title-using-tag-for-style-home {
+                                            &>.wpb_wrapper {
+                                                padding-bottom: 0;
+                                                h1 {
+                                                    font-size: 60px;
+                                                    &:first-child,
+                                                    &:nth-child(2),
+                                                    &:last-child {
+                                                        margin-left: 0;
+                                                        position: unset;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &>.vc_row.row-element-decoration-mnsm-home-hero {
+                            left: 50%;
+                            transform: translateX(-50%);
+                            height: 100%;
+                            .wpb_column.vc_column_container.vc_col-sm-12 {
+                                padding: 0;
+                                height: 100%;
+                                .vc_column-inner {
+                                    padding: 0;
+                                    height: 100%;
+                                    .wpb_wrapper {
+                                        margin-bottom: 0;
+                                        height: 100%;
+                                        .wpb_single_image.wpb_content_element {
+                                            height: 100%;
+                                            margin-bottom: 0;
+                                            .wpb_wrapper.vc_figure {
+                                                height: 100%;
+                                                .vc_single_image-wrapper.vc_box_border_grey {
+                                                    height: 100%;
+                                                    img.vc_single_image-img.attachment-full {
+                                                        height: 100% !important;
+                                                        width: auto !important;
+                                                        max-width: 120vw !important;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.section-mnsm-home-info-ticket {
+                        margin: 32px 0;
+                        background: linear-gradient( 180deg, rgba(226, 224, 220, 0) 0%, #e2e0dc 0%, #e2e0dc 100%, rgba(226, 224, 220, 0) 100%);
+                        .vc_row {
+                            &.row.row-mnsm-full-custom-image-left {
+                                .wpb_column.vc_column_container.vc_col-sm-5.vc_col-xs-12 {
+                                    padding: 64px 30px;
+                                    .vc_column-inner {
+                                        padding: 0;
+                                        .wpb_wrapper {
+                                            padding: 0;
+                                            margin-bottom: 0;
+                                            .wpb_text_column.wpb_content_element.custom-title-using-tag-for-style-home {
+                                                .wpb_wrapper {
+                                                    h2 {
+                                                        font-size: 35px;
+                                                    }
+                                                }
+                                            }
+                                            .wpb_text_column.wpb_content_element.cta-only-text-mnsm.cta-only-text-mnsm_yellow {
+                                                .wpb_wrapper {
+                                                    display: flex;
+                                                    justify-content: flex-start;
+                                                    p {
+                                                        display: flex;
+                                                        flex-direction: row-reverse;
+                                                        align-items: center;
+                                                        justify-content: flex-end;
+                                                        gap: 12px;
+                                                        width: 100%;
+                                                        img {
+                                                            width: 40%;
+                                                            margin: 0;
+                                                            position: unset;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                &.row-mobile-reverse {
+                                    .wpb_column.vc_column_container.vc_col-sm-5.vc_col-xs-12 {
+                                        margin-top: 16px;
+                                    }
+                                }
+                            }
+                            &:last-child {
+                                padding-top: 0;
+                            }
+                        }
+                    }
+                }
+                .vc_row {
+                    &.row-mobile-reverse {
+                        display: flex;
+                        flex-direction: column-reverse;
+                    }
+                }
+                &>.container {
+                    .vc_row.row.row-main-content-mnsm-home-hero-section {
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        .wpb_column.vc_column_container.vc_col-sm-7.vc_col-xs-12 {
+                            .vc_column-inner {
+                                padding: 0;
+                                .wpb_wrapper {
+                                    padding: 0;
+                                    margin-bottom: 0;
+                                    h1 {
+                                        font-size: 50px;
+                                    }
+                                    .wpb_text_column.wpb_content_element.custom-title-using-tag-for-style-home_special {
+                                        left: 100px;
+                                    }
+                                }
+                            }
+                        }
+                        .wpb_column.vc_column_container.vc_col-sm-5.vc_col-xs-12 {
+                            .vc_column-inner {
+                                padding: 0;
+                                &>.wpb_wrapper {
+                                    margin-top: 32px;
+                                    padding: 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 16px;
+                                    .wpb_text_column.wpb_content_element.cta-only-text-mnsm {
+                                        .wpb_wrapper {
+                                            p {
+                                                width: 100%;
+                                                margin-left: -25px;
+                                                img {
+                                                    width: 50%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
         9.0 - CPT Strum
    ========================================================================== */
-    /* ==========================================================================
+
+
+/* ==========================================================================
         10.0 - Visita Museo
    ========================================================================== */
-}
 
 
 /* Small applies to x-small devices (portrait phones, less than 321px) */
