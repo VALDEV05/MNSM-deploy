@@ -1444,6 +1444,9 @@ body {
                     }
                 }
             }
+            &.section-main-content-history {
+                border: 1px solid red;
+            }
         }
         .vc_row {
             &.row-main-content-mnsm-home-hero-section {
@@ -1530,6 +1533,38 @@ body {
                                 margin-bottom: 0;
                                 .wpb_single_image.wpb_content_element.vc_align_left {
                                     margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.row-subtitle-light-history {
+                .wpb_column.vc_column_container.vc_col-sm-4.vc_col-xs-12 {
+                    .vc_column-inner {
+                        .wpb_wrapper {
+                            .wpb_text_column.wpb_content_element {
+                                &.custom-title-using-tag-for-style-history {
+                                    .wpb_wrapper {
+                                        h2 {
+                                            strong {
+                                                font-weight: 400;
+                                                color: $color-magenta;
+                                            }
+                                        }
+                                    }
+                                }
+                                &.custom-text-using-tag-for-style-history {
+                                    .wpb_wrapper {
+                                        p {
+                                            strong {
+                                                em {
+                                                    font-style: normal;
+                                                    color: $color-magenta;
+                                                }
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
