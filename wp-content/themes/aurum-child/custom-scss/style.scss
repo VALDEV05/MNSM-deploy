@@ -2025,6 +2025,9 @@ body.page-template-visita-il-museo {
     body {
         .row {
             .vc_col-xs {
+                &-6 {
+                    width: 50%;
+                }
                 &-12 {
                     width: 100%;
                 }
@@ -2476,6 +2479,47 @@ body.page-template-visita-il-museo {
                                                     p {
                                                         img {
                                                             width: 100%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .vc_row.row.vc_custom_1704365159811 {
+                            .wpb_column.vc_column_container.vc_col-sm-4 {
+                                padding-right: 12px;
+                            }
+                        }
+                        &>.container {
+                            .vc_row.row-mnsm-newsletter {
+                                .wpb_column.vc_column_container.vc_col-sm-10 {
+                                    background-image: url('../../../../wp-content/uploads/2024/01/live-museo.svg');
+                                    background-size: contain;
+                                    padding: 90px 0 90px;
+                                    background-position-x: center;
+                                    &>.vc_column-inner {
+                                        &>.wpb_wrapper {
+                                            &>.vc_row {
+                                                gap: 80px;
+                                                .wpb_column.vc_column_container.vc_col-sm-6 {
+                                                    &:first-child {
+                                                        .vc_column-inner {
+                                                            .wpb_wrapper {
+                                                                .wpb_text_column.wpb_content_element {
+                                                                    .wpb_wrapper {
+                                                                        p {
+                                                                            text-align: center;
+                                                                            font-size: 25px;
+                                                                            br {
+                                                                                display: none;
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
                                                         }
                                                     }
                                                 }
