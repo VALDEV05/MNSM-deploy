@@ -1445,39 +1445,124 @@ body {
                 }
             }
             &.section-main-content-history {
-                border: 1px solid red;
-            }
-        }
-        .vc_row {
-            &.row-main-content-mnsm-home-hero-section {
-                padding: 340px 0 120px;
-                .wpb_column.vc_column_container.vc_col-sm {
-                    &-7 {
-                        &>.vc_column-inner {
-                            &>.wpb_wrapper {
+                .vc_row {
+                    .wpb_column.vc_column_container.vc_col-sm-12 {
+                        padding: 0;
+                        .vc_column-inner {
+                            padding: 0;
+                            .wpb_wrapper {
+                                padding: 0;
                                 margin-bottom: 0;
-                                position: relative;
-                                .wpb_text_column.wpb_content_element {
-                                    margin-bottom: 0;
-                                    &.custom-title-using-tag-for-style-home {
-                                        margin-bottom: 0;
-                                        .wpb_wrapper {
-                                            h1 {
-                                                strong {
-                                                    font-weight: unset;
-                                                    color: $color-magenta;
+                                .vc_row {
+                                    .column-section-history_image {
+                                        .vc_column-inner {
+                                            .wpb_wrapper {
+                                                .wpb_single_image.wpb_content_element.vc_align_left {
+                                                    .wpb_wrapper.vc_figure {
+                                                        .vc_single_image-wrapper {
+                                                            img {
+                                                                border-radius: 50%;
+                                                            }
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
-                                        &_special {
-                                            width: fit-content;
-                                            position: absolute;
-                                            top: 0;
-                                            left: 150px;
-                                            .wpb_wrapper {
-                                                h3 {
-                                                    strong {
-                                                        color: $color-magenta;
+                                    }
+                                    &.row-first-section-history {
+                                        .wpb_column.vc_column_container.vc_col-sm-3.vc_col-lg-offset-6 {
+                                            &>.vc_column-inner {
+                                                &>.wpb_wrapper {
+                                                    .wpb_content_element {
+                                                        margin-bottom: 0;
+                                                        &.wpb_text_column {
+                                                            .wpb_wrapper {
+                                                                h4 {
+                                                                    background-color: $color-background;
+                                                                    width: fit-content;
+                                                                    strong {
+                                                                        color: $color-magenta;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                        &.wpb_raw_code.wpb_raw_html {
+                                                            .wpb_wrapper {
+                                                                .line_custom {
+                                                                    &_01 {
+                                                                        width: 50vw;
+                                                                        position: absolute;
+                                                                        height: 3px;
+                                                                        top: 50%;
+                                                                        background: repeating-linear-gradient( to right, transparent, transparent 10px, $color-grey-light 10px, $color-grey-light 20px);
+                                                                        z-index: -1;
+                                                                    }
+                                                                    &_02 {
+                                                                        position: absolute;
+                                                                        height: 80px;
+                                                                        z-index: -1;
+                                                                        background: repeating-linear-gradient(to top, transparent, transparent 10px, #e2e0dc 10px, #e2e0dc 20px);
+                                                                        left: 25%;
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.row-second-section-history {
+                                        .wpb_column.vc_column_container.vc_col-sm-4 {
+                                            .vc_column-inner {
+                                                .wpb_wrapper {
+                                                    .wpb_text_column.wpb_content_element.column-section-history_description {
+                                                        .wpb_wrapper {
+                                                            p {
+                                                                aspect-ratio: 1;
+                                                                height: auto;
+                                                                background-color: $color-background;
+                                                                border: 1px solid $color-white;
+                                                                display: flex;
+                                                                align-items: center;
+                                                                padding: 10px 40px;
+                                                                border-radius: 50%;
+                                                                position: relative;
+                                                                left: 110px;
+                                                                top: -20px;
+                                                                font-size: 15px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .wpb_column.vc_column_container.vc_col-sm-3 {
+                                            .vc_column-inner {
+                                                .wpb_wrapper {
+                                                    .wpb_raw_code.wpb_content_element.wpb_raw_html {
+                                                        margin-bottom: 0;
+                                                        .wpb_wrapper {
+                                                            .line_custom {
+                                                                &_03 {
+                                                                    width: 10vw;
+                                                                    position: absolute;
+                                                                    height: 3px;
+                                                                    top: 70%;
+                                                                    background: repeating-linear-gradient( to right, transparent, transparent 10px, $color-grey-light 10px, $color-grey-light 20px);
+                                                                    z-index: -1;
+                                                                    right: -170px;
+                                                                }
+                                                                &_04 {
+                                                                    position: absolute;
+                                                                    height: 80px;
+                                                                    z-index: -1;
+                                                                    background: repeating-linear-gradient(to top, transparent, transparent 10px, #e2e0dc 10px, #e2e0dc 20px);
+                                                                    top: 70%;
+                                                                    right: 0px;
+                                                                }
+                                                            }
+                                                        }
                                                     }
                                                 }
                                             }
@@ -1487,81 +1572,123 @@ body {
                             }
                         }
                     }
-                    &-5 {
-                        padding-top: 5%;
-                        &>.vc_column-inner {
-                            height: 100%;
-                            &>.wpb_wrapper {
-                                height: 100%;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;
-                                margin-bottom: 0;
-                                .wpb_text_column.wpb_content_element {
-                                    margin-bottom: 0;
-                                    &.cta-only-text-mnsm {
-                                        .wpb_wrapper {
-                                            p {
-                                                display: flex;
-                                                align-items: center;
-                                                flex-direction: row-reverse;
-                                                width: fit-content;
-                                                gap: 12px;
-                                                color: $color-ocra;
-                                                img {
-                                                    position: unset;
-                                                    float: unset;
-                                                    margin: unset;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
                 }
             }
-            &.row-mnsm-full-custom-image-left {
-                .wpb_column.vc_column_container.vc_col-sm {
-                    &-7 {
-                        padding: 0;
-                        .vc_column-inner {
-                            padding: 0;
-                            .wpb_wrapper {
-                                padding: 0;
-                                margin-bottom: 0;
-                                .wpb_single_image.wpb_content_element.vc_align_left {
-                                    margin-bottom: 0;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            &.row-subtitle-light-history {
-                .wpb_column.vc_column_container.vc_col-sm-4.vc_col-xs-12 {
-                    .vc_column-inner {
-                        .wpb_wrapper {
+        }
+    }
+    .vc_row {
+        &.row-main-content-mnsm-home-hero-section {
+            padding: 340px 0 120px;
+            .wpb_column.vc_column_container.vc_col-sm {
+                &-7 {
+                    &>.vc_column-inner {
+                        &>.wpb_wrapper {
+                            margin-bottom: 0;
+                            position: relative;
                             .wpb_text_column.wpb_content_element {
-                                &.custom-title-using-tag-for-style-history {
+                                margin-bottom: 0;
+                                &.custom-title-using-tag-for-style-home {
+                                    margin-bottom: 0;
                                     .wpb_wrapper {
-                                        h2 {
+                                        h1 {
                                             strong {
-                                                font-weight: 400;
+                                                font-weight: unset;
                                                 color: $color-magenta;
                                             }
                                         }
                                     }
-                                }
-                                &.custom-text-using-tag-for-style-history {
-                                    .wpb_wrapper {
-                                        p {
-                                            strong {
-                                                em {
-                                                    font-style: normal;
+                                    &_special {
+                                        width: fit-content;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 150px;
+                                        .wpb_wrapper {
+                                            h3 {
+                                                strong {
                                                     color: $color-magenta;
                                                 }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &-5 {
+                    padding-top: 5%;
+                    &>.vc_column-inner {
+                        height: 100%;
+                        &>.wpb_wrapper {
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            margin-bottom: 0;
+                            .wpb_text_column.wpb_content_element {
+                                margin-bottom: 0;
+                                &.cta-only-text-mnsm {
+                                    .wpb_wrapper {
+                                        p {
+                                            display: flex;
+                                            align-items: center;
+                                            flex-direction: row-reverse;
+                                            width: fit-content;
+                                            gap: 12px;
+                                            color: $color-ocra;
+                                            img {
+                                                position: unset;
+                                                float: unset;
+                                                margin: unset;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.row-mnsm-full-custom-image-left {
+            .wpb_column.vc_column_container.vc_col-sm {
+                &-7 {
+                    padding: 0;
+                    .vc_column-inner {
+                        padding: 0;
+                        .wpb_wrapper {
+                            padding: 0;
+                            margin-bottom: 0;
+                            .wpb_single_image.wpb_content_element.vc_align_left {
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.row-subtitle-light-history {
+            .wpb_column.vc_column_container.vc_col-sm-4.vc_col-xs-12 {
+                .vc_column-inner {
+                    .wpb_wrapper {
+                        .wpb_text_column.wpb_content_element {
+                            &.custom-title-using-tag-for-style-history {
+                                .wpb_wrapper {
+                                    h2 {
+                                        strong {
+                                            font-weight: 400;
+                                            color: $color-magenta;
+                                        }
+                                    }
+                                }
+                            }
+                            &.custom-text-using-tag-for-style-history {
+                                .wpb_wrapper {
+                                    p {
+                                        strong {
+                                            em {
+                                                font-style: normal;
+                                                color: $color-magenta;
                                             }
                                         }
                                     }
