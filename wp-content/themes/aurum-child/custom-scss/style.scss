@@ -2060,7 +2060,7 @@ body.page-template-visita-il-museo {
             font-size: 50px;
         }
         .vc_column-inner {
-            padding: 0!important;
+            padding: 0 !important;
         }
         .cta-only-text-mnsm.cta-only-text-mnsm_yellow {
             .wpb_wrapper {
@@ -2214,9 +2214,32 @@ body.page-template-visita-il-museo {
         6.0 - Footer     
    ========================================================================== */
     body {
-        .site-footer,
-        .site-footer-element-decoration {
-            display: none;
+        .site-footer {
+            &-element-decoration {
+                .container {
+                    bottom: -60%;
+                }
+            }
+            padding: 72px 0 96px;
+            .container {
+                .row {
+                    display: flex;
+                    gap: 12px;
+                    &>* {
+                        width: 100%;
+                    }
+                    .second-column {
+                        .accordion-item_list {
+                            li {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .col-md-4.third_column {
+                        align-items: flex-start;
+                    }
+                }
+            }
         }
     }
     /* ==========================================================================
@@ -2496,7 +2519,7 @@ body.page-template-visita-il-museo {
                         &>.container {
                             .vc_row.row-mnsm-newsletter {
                                 .wpb_column.vc_column_container.vc_col-sm-10 {
-                                    background-image: url('../../../../wp-content/uploads/2024/01/live-museo.svg');
+                                    background-image: url("../../../../wp-content/uploads/2024/01/live-museo.svg");
                                     background-size: contain;
                                     padding: 90px 0 90px;
                                     background-position-x: center;
