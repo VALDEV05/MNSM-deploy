@@ -2056,6 +2056,28 @@ body.page-template-visita-il-museo {
         h4 {
             font-size: 50px;
         }
+        .vc_column-inner {
+            padding: 0!important;
+        }
+        .cta-only-text-mnsm.cta-only-text-mnsm_yellow {
+            .wpb_wrapper {
+                display: flex;
+                justify-content: flex-start;
+                p {
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    justify-content: flex-end;
+                    gap: 12px;
+                    width: 100%;
+                    img {
+                        width: 40%;
+                        margin: 0;
+                        position: unset;
+                    }
+                }
+            }
+        }
     }
     /* ==========================================================================
         5.0 - Header
@@ -2365,6 +2387,102 @@ body.page-template-visita-il-museo {
                             }
                             &:last-child {
                                 padding-top: 0;
+                            }
+                        }
+                    }
+                    &.section-mnsm-title-sheet-music {
+                        &>.vc_row.row-element-mnsm-decoration-sheet-music {
+                            width: 250vw;
+                        }
+                        .container {
+                            .vc_row {
+                                .wpb_column.vc_column_container.vc_col-xs-12.vc_col-sm {
+                                    &-8 {
+                                        .vc_column-inner {
+                                            padding: 0;
+                                            .wpb_wrapper {
+                                                padding: 0;
+                                                .wpb_text_column.wpb_content_element.custom-title-using-tag-for-style-home {
+                                                    .wpb_wrapper {
+                                                        h4 {
+                                                            font-size: 42px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &-4 {
+                                        margin-top: 16px;
+                                        .vc_column-inner {
+                                            padding: 0;
+                                            .wpb_wrapper {
+                                                padding: 0;
+                                                margin-bottom: 0;
+                                                .wpb_text_column.wpb_content_element.cta-only-text-mnsm.cta-only-text-mnsm_yellow {
+                                                    .wpb_wrapper {
+                                                        display: flex;
+                                                        justify-content: flex-start;
+                                                        p {
+                                                            font-size: 14px;
+                                                            display: flex;
+                                                            flex-direction: row-reverse;
+                                                            align-items: center;
+                                                            justify-content: flex-end;
+                                                            gap: 12px;
+                                                            width: 100%;
+                                                            img {
+                                                                width: 40%;
+                                                                margin: 0;
+                                                                position: unset;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.section-mnsm-home-finale-strumento .container {
+                        .vc_row {
+                            .wpb_column.vc_column_container.vc_col-sm-6 {
+                                &>.vc_column-inner {
+                                    &>.wpb_wrapper {
+                                        .wpb_text_column.wpb_content_element.custom-title-using-tag-for-style-home_special {
+                                            top: 15px;
+                                            left: 110px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &.section-home-mnsm-instagram {
+                        &>.container {
+                            .vc_row {
+                                .wpb_column.vc_column_container.vc_col-sm-12 {
+                                    &>.vc_column-inner {
+                                        &>.wpb_wrapper {
+                                            .wpb_text_column.wpb_content_element.custom-title-using-tag-for-style-home_special {
+                                                top: 14px;
+                                                left: 130px;
+                                            }
+                                            .wpb_text_column.wpb_content_element.cta-only-text-mnsm_special {
+                                                bottom: -20px;
+                                                .wpb_wrapper {
+                                                    p {
+                                                        img {
+                                                            width: 100%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
