@@ -151,4 +151,5 @@ function activeMenuFullPageMobile() {
         });
     }
 }
+
 jQuery(document).ready(init);

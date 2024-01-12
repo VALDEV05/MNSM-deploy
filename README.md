@@ -4,6 +4,19 @@
 3. Remove scroll bar
 4. Chiedere loghi svg
 
+#LIST-LASTORIA
+1. date
+2. image
+3. text
+    - -first
+    - -second
+    - -third
+    - -fourth
+    - -fifth
+    - -sixth
+    - -seventh
+    - -eighth
+    - -ninth
 
 # example-for-opening-hours
 # A helper to query and format a set of opening hours

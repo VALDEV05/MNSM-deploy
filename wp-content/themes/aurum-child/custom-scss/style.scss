@@ -1502,7 +1502,7 @@ body {
                                                                         position: absolute;
                                                                         height: 80px;
                                                                         z-index: -1;
-                                                                        background: repeating-linear-gradient(to top, transparent, transparent 10px, #e2e0dc 10px, #e2e0dc 20px);
+                                                                        background: repeating-linear-gradient( to top, transparent, transparent 10px, #e2e0dc 10px, #e2e0dc 20px);
                                                                         left: 25%;
                                                                     }
                                                                 }
@@ -1558,7 +1558,7 @@ body {
                                                                     position: absolute;
                                                                     height: 80px;
                                                                     z-index: -1;
-                                                                    background: repeating-linear-gradient(to top, transparent, transparent 10px, #e2e0dc 10px, #e2e0dc 20px);
+                                                                    background: repeating-linear-gradient( to top, transparent, transparent 10px, #e2e0dc 10px, #e2e0dc 20px);
                                                                     top: 70%;
                                                                     right: 0px;
                                                                 }
@@ -2148,10 +2148,11 @@ body {
     &.page-template-la-storia-template {
         .container-page-la-storia {
             background-color: $color-background;
+            padding: 0;
             &_title {
                 position: relative;
                 padding: 0;
-                margin-top: 64px;
+                padding-top: 32px;
                 .container {
                     position: relative;
                     z-index: 1;
@@ -2190,6 +2191,7 @@ body {
                 }
             }
             &_container-main-page {
+                margin-top: -100px;
                 padding: 0;
                 position: relative;
                 .element-background-decoration_storia-main-section {
@@ -2208,12 +2210,18 @@ body {
                         img {
                             border-radius: 50%;
                             width: 250px;
+                            aspect-ratio: 1;
                         }
                     }
                     &>.date {
                         font-size: 105px;
                         background: $color-background;
                         line-height: 100%;
+                        font-weight: 400;
+                        span {
+                            color: $color-magenta;
+                            font-weight: 700;
+                        }
                     }
                     &>.text-circle {
                         border: 1px solid white;
@@ -2232,20 +2240,156 @@ body {
                             font-size: 15px;
                         }
                     }
-                    .date-first {
-                        position: absolute;
-                        top: -52.5px;
-                        right: 470px;
+                    .date {
+                        &-first {
+                            position: absolute;
+                            top: -52.5px;
+                            right: 470px;
+                        }
+                        &-second {
+                            position: absolute;
+                            top: 425px;
+                            left: 530px;
+                        }
+                        &-third {
+                            position: absolute;
+                            top: 900px;
+                            left: 1170px;
+                        }
+                        &-fourth {
+                            position: absolute;
+                            top: 1600px;
+                            left: 400px;
+                        }
+                        &-fifth {
+                            position: absolute;
+                            top: 2040px;
+                            left: 610px;
+                        }
+                        &-sixth {
+                            position: absolute;
+                            top: 2645px;
+                            left: 610px;
+                        }
+                        &-seventh {
+                            position: absolute;
+                            top: 3160px;
+                            left: 1395px;
+                        }
+                        &-eighth {
+                            position: absolute;
+                            top: 3700px;
+                            left: 600px;
+                        }
+                        &-ninth {
+                            position: absolute;
+                            top: 4180px;
+                            left: 700px;
+                        }
                     }
-                    .image-first {
-                        position: absolute;
-                        top: -125px;
-                        right: 32px;
+                    .image {
+                        &-first {
+                            position: absolute;
+                            top: -125px;
+                            right: 32px;
+                        }
+                        &-second {
+                            position: absolute;
+                            top: 645px;
+                            left: 945px;
+                        }
+                        &-third {
+                            position: absolute;
+                            top: 1200px;
+                            left: 375px;
+                        }
+                        &-fourth {
+                            position: absolute;
+                            top: 1960px;
+                            left: 1240px;
+                        }
+                        &-fifth {
+                            position: absolute;
+                            top: 2800px;
+                            left: 1380px;
+                        }
+                        &-sixth {
+                            position: absolute;
+                            top: 3050px;
+                            left: 950px;
+                            img {
+                                width: 350px;
+                            }
+                        }
+                        &-seventh {
+                            position: absolute;
+                            top: 4120px;
+                            left: 1110px;
+                        }
+                        &-eighth {
+                            position: absolute;
+                            top: 5000px;
+                            left: 480px;
+                        }
                     }
-                    .text-first {
-                        position: absolute;
-                        right: 340px;
-                        top: 70px;
+                    .text {
+                        &-first {
+                            position: absolute;
+                            right: 340px;
+                            top: 70px;
+                        }
+                        &-second {
+                            position: absolute;
+                            top: 540px;
+                            left: 400px;
+                            padding: 32px;
+                        }
+                        &-third {
+                            padding: 26px;
+                            position: absolute;
+                            top: 1025px;
+                            left: 850px;
+                        }
+                        &-fourth {
+                            position: absolute;
+                            top: 1500px;
+                            left: 700px;
+                        }
+                        &-fifth {
+                            position: absolute;
+                            top: 2250px;
+                            padding: 18px;
+                            left: 400px;
+                            p {
+                                max-width: 300px;
+                            }
+                        }
+                        &-sixth {
+                            position: absolute;
+                            top: 2480px;
+                            left: 915px;
+                            p {
+                                max-width: 350px;
+                            }
+                        }
+                        &-seventh {
+                            position: absolute;
+                            left: 350px;
+                            top: 3150px;
+                            p {
+                                max-width: 350px;
+                            }
+                        }
+                        &-eighth {
+                            position: absolute;
+                            top: 3500px;
+                            left: 980px;
+                        }
+                        &-ninth {
+                            position: absolute;
+                            top: 4350px;
+                            left: 360px;
+                        }
                     }
                 }
             }

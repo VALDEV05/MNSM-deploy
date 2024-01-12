@@ -1,3 +1,48 @@
+<?php
+
+/**
+ *  
+ * 
+ * 
+ * 
+ * */
+
+$text_first_field_var = get_field('text_first_field');
+$text_second_field_var = get_field('text_second_field');
+$text_third_field_var = get_field('text_third_field');
+$text_fourth_field_var = get_field('text_fourth_field');
+$text_fifth_field_var = get_field('text_fifth_field');
+$text_sixth_field_var = get_field('text_sixth_field');
+$text_seventh_field_var = get_field('text_seventh_field');
+$text_eighth_field_var = get_field('text_eighth_field');
+$text_ninth_field_var = get_field('text_ninth_field');
+
+
+$date_first_field_var = get_field('date_first_field');
+$date_second_field_var = get_field('date_second_field');
+$date_third_field_var = get_field('date_third_field');
+$date_fourth_field_var = get_field('date_fourth_field');
+$date_fifth_field_var = get_field('date_fifth_field');
+$date_sixth_field_var = get_field('date_sixth_field');
+$date_seventh_field_var = get_field('date_seventh_field');
+$date_eighth_field_var = get_field('date_eighth_field');
+$date_ninth_field_var = get_field('date_ninth_field');
+
+
+$image_first_field_var = get_field('image_first_field')["url"];
+$image_second_field_var = get_field('image_second_field')["url"];
+$image_third_field_var = get_field('image_third_field')["url"];
+$image_fourth_field_var = get_field('image_fourth_field')["url"];
+$image_fifth_field_var = get_field('image_fifth_field')["url"];
+$image_sixth_field_var = get_field('image_sixth_field')["url"];
+$image_seventh_field_var = get_field('image_seventh_field')["url"];
+$image_eighth_field_var = get_field('image_eighth_field')["url"];
+
+
+
+?>
+
+
 <section class="container-page-la-storia">
     <section class="container-page-la-storia_title">
         <div class="container">
@@ -32,19 +77,96 @@
         </div>
         <div class="container-page-la-storia_container-main-page_container-element">
             <div class="date-first date">
-                1865
+                <?php echo $date_first_field_var; ?>
             </div>
             <div class="image-first dotted">
-                <img src="../../../wp-content/uploads/2024/01/1985-storia.png">
+                <img src="<?php echo $image_first_field_var; ?>">
             </div>
             <div class="text-first text-circle">
-                <p>Evangelista Gorga nacque da una famiglia di nobili origini. Grande appassionato di musica, aveva particolari doti canore e intraprese una folgorante carriera come tenore lirico, durata appena quattro anni.
-                    Nel 1989 si ritirò definitivamente dalle scene per dedicarsi al collezionismo.
-                    La sua collezione raggiunse il numero di circa 150000 pezzi, suddivisi in più di trenta sezioni, tra cui strumenti musicali e spartiti, lucerne, affreschi, bilance, giocattoli e oltre cinquemila libri. La passione per il collezionismo lo porterà a dilapidare il suo intero patrimonio e a contrarre ingenti debiti.</p>
+                <p><?php echo $text_first_field_var; ?></p>
+            </div>
+            <div class="date-second date">
+                <?php echo $date_second_field_var; ?>
+            </div>
+            <div class="text-second text-circle">
+                <p><?php echo $text_second_field_var; ?></p>
+            </div>
+            <div class="image-second dotted">
+                <img src="<?php echo $image_second_field_var; ?>">
+            </div>
+            <div class="date-third date">
+                <?php echo $date_third_field_var; ?>
+            </div>
+            <div class="text-third text-circle">
+                <p><?php echo $text_third_field_var; ?></p>
+            </div>
+            <div class="image-third dotted">
+                <img src="<?php echo $image_third_field_var; ?>">
+            </div>
+            <div class="date-fourth date">
+                <?php echo $date_fourth_field_var; ?>
+            </div>
+            <div class="text-fourth text-circle">
+                <p><?php echo $text_fourth_field_var; ?></p>
+            </div>
+            <div class="image-fourth dotted">
+                <img src="<?php echo $image_fourth_field_var; ?>">
+            </div>
+            <div class="date-fifth date">
+                <?php echo $date_fifth_field_var; ?>
+            </div>
+            <div class="text-fifth text-circle">
+                <p><?php echo $text_fifth_field_var; ?></p>
+            </div>
+            <div class="date-sixth date">
+                <?php echo $date_sixth_field_var; ?>
+            </div>
+            <div class="text-sixth text-circle">
+                <p><?php echo $text_sixth_field_var; ?></p>
+            </div>
+            <div class="image-fifth dotted">
+                <img src="<?php echo $image_fifth_field_var; ?>">
+            </div>
+            <div class="date-seventh date">
+                <?php echo $date_seventh_field_var; ?>
+            </div>
+            <div class="image-sixth dotted">
+                <img src="<?php echo $image_sixth_field_var; ?>">
+            </div>
+            <div class="text-seventh text-circle">
+                <p><?php echo $text_seventh_field_var; ?></p>
+            </div>
+            <div class="date-eighth date">
+                <?php echo $date_eighth_field_var; ?>
+            </div>
+            <div class="text-eighth text-circle">
+                <p>
+                    <?php echo $text_eighth_field_var; ?>
+                </p>
+            </div>
+            <div class="image-seventh dotted">
+                <img src="<?php echo $image_seventh_field_var; ?>">
+            </div>
+            <div class="date-ninth date">
+                <?php echo $date_ninth_field_var; ?>
+            </div>
+            <div class="text-ninth text-circle">
+                <p>
+                    <?php echo $text_ninth_field_var; ?>
+                </p>
+            </div>
+            <div class="image-eighth dotted">
+                <img src="<?php echo $image_eighth_field_var; ?>">
             </div>
         </div>
         <!-- /.container-page-la-storia_container-main-page_container-element -->
     </section>
     <!-- /.container-page-la-storia_container-main-page -->
 </section>
-<!-- /.container-page-la-storia -->Ì
+<!-- /.container-page-la-storia -->
+<?php
+echo '<div class="page-container standalone-container visita-museo-template">';
+
+the_content();
+
+echo '</div>';
