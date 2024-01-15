@@ -11,6 +11,48 @@
 ?>
 
 <section class="container-page-calendar">
-    
+    <section class="container-page-calendar_title">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h4>Calendario</h4>
+                </div>
+                <!-- /.col-md-8 -->
+                <div class="col-md-4">
+                    <div class="container_filter_calendar">
+
+                        <div class="container_filter_calendar_item container_filter_calendar_item_concerti">
+                            <div class="dot-element"></div>
+                            Concerti
+                        </div>
+                        <div class="container_filter_calendar_item container_filter_calendar_item_aperture-straordinarie">
+                            <div class="dot-element"></div>
+                            Aperture Straordinarie
+                        </div>
+
+                        <div class="container_filter_calendar_item container_filter_calendar_item_progetti">
+                            <div class="dot-element"></div>
+                            Progetti
+                        </div>
+                        <div class="container_filter_calendar_item container_filter_calendar_item_visite-guidate">
+                            <div class="dot-element"></div>
+                            Visite Guidate
+                        </div>
+                    </div>
+                    <!-- /.container_filter_calendar -->
+                </div>
+                <!-- /.col-md-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+        <div class="element-decoration-title-la-storia">
+            <img src="../../../wp-content/uploads/2024/01/background-sheet-music.svg" alt="">
+        </div>
+    </section>
+    <!-- /.container-page-calendar_title -->
+   <?php
+    the_content();
+   ?>
 </section>
 <!-- /.container-page-calendar -->
