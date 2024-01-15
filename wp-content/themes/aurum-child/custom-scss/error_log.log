@@ -9,3 +9,4 @@
 01/12/24 9:15:22: style.scss - unexpected }: failed at `` /Users/valeriocorda/Library/CloudStorage/GoogleDrive-info@valeriocorda.it/Il mio Drive/CLIENTI/MNSM/website_deploy/MNSM-deploy/wp-content/themes/aurum-child/custom-scss/style.scss on line 2292, at column 0
 01/12/24 9:15:23: style.scss - unexpected }: failed at `` /Users/valeriocorda/Library/CloudStorage/GoogleDrive-info@valeriocorda.it/Il mio Drive/CLIENTI/MNSM/website_deploy/MNSM-deploy/wp-content/themes/aurum-child/custom-scss/style.scss on line 2292, at column 0
 01/12/24 9:15:28: style.scss - unexpected }: failed at `` /Users/valeriocorda/Library/CloudStorage/GoogleDrive-info@valeriocorda.it/Il mio Drive/CLIENTI/MNSM/website_deploy/MNSM-deploy/wp-content/themes/aurum-child/custom-scss/style.scss on line 2292, at column 0
+01/15/24 2:18:20: style.scss - Undefined variable $color-grey-light: style.scss on line 218, at column 5
