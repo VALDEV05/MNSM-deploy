@@ -51,8 +51,20 @@
         </div>
     </section>
     <!-- /.container-page-calendar_title -->
-   <?php
-    the_content();
-   ?>
+    <section class="container-page-calendar_main-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <?php @include('calendar_element/calendar_file.php');?>
+                </div>
+                <!-- /.col-md-8 -->
+                <div class="col-md-4"></div>
+                <!-- /.col-md-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.container-page-calendar_main-content -->
 </section>
 <!-- /.container-page-calendar -->
