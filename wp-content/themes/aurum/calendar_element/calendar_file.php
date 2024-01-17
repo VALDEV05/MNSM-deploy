@@ -14,12 +14,10 @@
     );
 
     $loop = new WP_Query($args);
-    /* var_dump($loop); */
-
-    while ($loop->have_posts()) : $loop->the_post();
-        print the_title();
-        the_excerpt();
-    endwhile;
+    $postQueryArray = $loop->posts;
+    foreach ($postQueryArray as $postSingle) {
+        @include('calendar_file_event.php');
+    }
     wp_reset_postdata();
 
     ?>

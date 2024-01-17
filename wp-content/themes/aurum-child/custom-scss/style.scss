@@ -2495,7 +2495,37 @@ body.page-template-calendario-template {
             padding: 120px 0;
             .container {
                 .row {
-                    .col-md-8 {}
+                    .col-md-8 {
+                        .list-complete-event {
+                            .single-event {
+                                width: 20%;
+                                padding: 14px 32px;
+                                &_day-event {
+                                    color: $color-white;
+                                    font-size: 45px;
+                                    font-style: normal;
+                                    line-height: 102.1%;
+                                    font-weight: 800;
+                                }
+                                &_orario-event {
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    font-style: normal;
+                                    line-height: 102.1%;
+                                    letter-spacing: -0.725px;
+                                    margin-bottom: 16px;
+                                }
+                                &_title-event {
+                                    color: $color-white;
+                                    font-size: 17px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    line-height: 102.1%;
+                                    letter-spacing: -0.765px;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
