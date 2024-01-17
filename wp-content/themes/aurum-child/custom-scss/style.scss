@@ -2496,16 +2496,71 @@ body.page-template-calendario-template {
             .container {
                 .row {
                     .col-md-8 {
+                        .container-switcher-month-calendar {
+                            .selector-for-month {
+                                select {
+                                    max-width: fit-content;
+                                    background: transparent;
+                                    border: none;
+                                    text-transform: uppercase;
+                                    color: $color-white;
+                                    font-size: 30px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: 102.1%;
+                                    -webkit-appearance: none;
+                                    -moz-appearance: none;
+                                    appearance: none;
+                                    background-image: url('../../../../wp-content/uploads/2024/01/arrow_select.svg');
+                                    background-position: right;
+                                    background-repeat: no-repeat;
+                                    padding: 4px 8px 4px 4px;
+                                    option {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
                         .list-complete-event {
+                            display: flex;
+                            flex-wrap: wrap;
                             .single-event {
                                 width: 20%;
-                                padding: 14px 32px;
+                                padding: 14px;
                                 &_day-event {
-                                    color: $color-white;
-                                    font-size: 45px;
-                                    font-style: normal;
-                                    line-height: 102.1%;
-                                    font-weight: 800;
+                                    display: flex;
+                                    .container_element {
+                                        color: $color-white;
+                                        font-size: 45px;
+                                        font-style: normal;
+                                        line-height: 102.1%;
+                                        font-weight: 800;
+                                    }
+                                    .container-type-daily-evento {
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        gap: 6px;
+                                        margin: 0 6px;
+                                        .dot-type-daily-evento {
+                                            width: 18px;
+                                            height: auto;
+                                            aspect-ratio: 1;
+                                            border-radius: 50%;
+                                            &.concerti {
+                                                background-color: $color-magenta;
+                                            }
+                                            &.aperture-straordinarie {
+                                                background-color: $color-ocra;
+                                            }
+                                            &.progetti {
+                                                background-color: $color-yellow;
+                                            }
+                                            &.visite-guidate {
+                                                background-color: $color-orange;
+                                            }
+                                        }
+                                    }
                                 }
                                 &_orario-event {
                                     font-size: 16px;

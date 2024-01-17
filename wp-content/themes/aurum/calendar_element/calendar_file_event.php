@@ -1,4 +1,5 @@
 <?php
+
 /**
  * 
  * Giorno in evidenza -> $day_data_evento;
@@ -41,32 +42,39 @@ $type_evento_prenotation_field = get_field('tipologia_evento', $id_evento);
 $type_evento_prenotation_status = "";
 if ($type_evento_prenotation_field == "Ingresso Libero") {
     $type_evento_prenotation_status = "ingresso_libero";
-} else if ($type_evento_prenotation_field == "Ingresso a pagamento"){
+} else if ($type_evento_prenotation_field == "Ingresso a pagamento") {
     $type_evento_prenotation_status = "ingresso_a_pagamento";
-} else if ($type_evento_prenotation_field == "Ingresso su prenotazione"){
+} else if ($type_evento_prenotation_field == "Ingresso su prenotazione") {
     $type_evento_prenotation_status = "ingresso_su_prenotazione";
-} 
+}
 
 
 /* TIPOLOGIA GIORNATA EVENTO */
 $type_daily_evento_field = get_field('tipologia_giornata_evento', $id_evento);
 
-
 ?>
 
 <div class="single-event">
     <div class="single-event_day-event">
-        <?php echo $day_data_evento;?>
-        <!-- AGGIUNGERE LA TIPOLOGIA DELL'EVENTO CON PALLINI -->
-        <span ></span>
+        <div class="container_element">
+            <?php echo $day_data_evento; ?>
+        </div>
+        <div class="container-type-daily-evento">
+            <!-- AGGIUNGERE LA TIPOLOGIA DELL'EVENTO -->
+            <?php foreach ($type_daily_evento_field as $type_daily_evento_field_single) :
+                $type_evento_p_slug = slugify($type_daily_evento_field_single);?>
+                <div class="dot-type-daily-evento <?php echo $type_evento_p_slug;?>"></div>
+            <?php endforeach; ?>
+        </div>
+        <!-- /.container-type-daily-evento -->
     </div>
     <!-- /.single-event_day-event -->
     <div class="single-event_orario-event">
-        <?php echo $string_orario_evento;?>
+        <?php echo $string_orario_evento; ?>
     </div>
     <!-- /.single-event_orario-event -->
     <div class="single-event_title-event">
-        <?php echo $title_evento;?>
+        <?php echo $title_evento; ?>
     </div>
     <!-- /.single-event_title-event -->
 </div>
