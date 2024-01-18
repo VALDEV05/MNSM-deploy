@@ -18,9 +18,10 @@ $args = array(
 );
 
 ?>
-<div class="container-switcher-month-calendar">
+<div class="container-switcher-date-calendar">
     <?php
         @include('calendar_filter_month.php');
+        @include('calendar_filter_year.php');
     ?>
 </div>
 <div class="list-complete-event">
