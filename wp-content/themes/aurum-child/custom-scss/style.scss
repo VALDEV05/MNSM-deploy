@@ -207,9 +207,9 @@ button {
     &:focus-visible,
     &:focus-within,
     &:active {
-        box-shadow: none!important;
-        outline: none!important;
-        outline-style: none!important;
+        box-shadow: none !important;
+        outline: none !important;
+        outline-style: none !important;
     }
 }
 
@@ -2510,99 +2510,171 @@ body.page-template-calendario-template {
             padding: 120px 0;
             .container {
                 .row {
-                    .col-md-8 {
-                        .container-switcher-date-calendar {
-                            display: flex;
-                            gap: 32px;
-                            justify-content: center;
-                            padding-bottom: 16px;
-                            margin-bottom: 16px;
-                            border-bottom: 3px solid #fefefe40;
-                            .selector-for {
-                                &-month,
-                                &-year {
-                                    select {
-                                        max-width: fit-content;
-                                        background: transparent;
-                                        border: none;
-                                        text-transform: uppercase;
-                                        color: $color-white;
-                                        font-size: 30px;
-                                        font-style: normal;
-                                        font-weight: 400;
-                                        line-height: 102.1%;
-                                        -webkit-appearance: none;
-                                        -moz-appearance: none;
-                                        appearance: none;
-                                        background-image: url('../../../../wp-content/uploads/2024/01/arrow_select.svg');
-                                        background-position: right;
-                                        background-repeat: no-repeat;
-                                        padding: 4px 16px 4px 4px;
-                                        option {
-                                            font-size: 16px;
+                    .col-md {
+                        &-8 {
+                            .container-switcher-date-calendar {
+                                display: flex;
+                                gap: 32px;
+                                justify-content: center;
+                                padding-bottom: 16px;
+                                margin-bottom: 16px;
+                                border-bottom: 3px solid #fefefe40;
+                                .selector-for {
+                                    &-month,
+                                    &-year {
+                                        select {
+                                            max-width: fit-content;
+                                            background: transparent;
+                                            border: none;
+                                            text-transform: uppercase;
+                                            color: $color-white;
+                                            font-size: 30px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 102.1%;
+                                            -webkit-appearance: none;
+                                            -moz-appearance: none;
+                                            appearance: none;
+                                            background-image: url("../../../../wp-content/uploads/2024/01/arrow_select.svg");
+                                            background-position: right;
+                                            background-repeat: no-repeat;
+                                            padding: 4px 16px 4px 4px;
+                                            option {
+                                                font-size: 16px;
+                                            }
                                         }
                                     }
                                 }
                             }
-                        }
-                        .list-complete-event {
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: space-between;
-                            padding: 0 2.5%;
-                            .single-event {
-                                width: 22.5%;
-                                padding: 14px;
-                                &_day-event {
-                                    display: flex;
-                                    .container_element {
-                                        color: $color-white;
-                                        font-size: 45px;
-                                        font-style: normal;
-                                        line-height: 102.1%;
-                                        font-weight: 800;
-                                    }
-                                    .container-type-daily-evento {
+                            .list-complete-event {
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: space-between;
+                                padding: 0 2.5%;
+                                .single-event {
+                                    width: 22.5%;
+                                    padding: 14px;
+                                    &_day-event {
                                         display: flex;
-                                        justify-content: center;
-                                        align-items: center;
-                                        gap: 6px;
-                                        margin: 0 6px;
-                                        .dot-type-daily-evento {
-                                            width: 18px;
-                                            height: auto;
-                                            aspect-ratio: 1;
-                                            border-radius: 50%;
-                                            &.concerti {
-                                                background-color: $color-magenta;
-                                            }
-                                            &.aperture-straordinarie {
-                                                background-color: $color-ocra;
-                                            }
-                                            &.progetti {
-                                                background-color: $color-yellow;
-                                            }
-                                            &.visite-guidate {
-                                                background-color: $color-orange;
+                                        .container_element {
+                                            color: $color-white;
+                                            font-size: 45px;
+                                            font-style: normal;
+                                            line-height: 102.1%;
+                                            font-weight: 800;
+                                        }
+                                        .container-type-daily-evento {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            gap: 6px;
+                                            margin: 0 6px;
+                                            .dot-type-daily-evento {
+                                                width: 18px;
+                                                height: auto;
+                                                aspect-ratio: 1;
+                                                border-radius: 50%;
+                                                &.concerti {
+                                                    background-color: $color-magenta;
+                                                }
+                                                &.aperture-straordinarie {
+                                                    background-color: $color-ocra;
+                                                }
+                                                &.progetti {
+                                                    background-color: $color-yellow;
+                                                }
+                                                &.visite-guidate {
+                                                    background-color: $color-orange;
+                                                }
                                             }
                                         }
                                     }
+                                    &_orario-event {
+                                        font-size: 16px;
+                                        font-weight: 400;
+                                        font-style: normal;
+                                        line-height: 102.1%;
+                                        letter-spacing: -0.725px;
+                                        margin-bottom: 16px;
+                                    }
+                                    &_title-event {
+                                        color: $color-white;
+                                        font-size: 17px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 102.1%;
+                                        letter-spacing: -0.765px;
+                                    }
                                 }
-                                &_orario-event {
-                                    font-size: 16px;
-                                    font-weight: 400;
-                                    font-style: normal;
-                                    line-height: 102.1%;
-                                    letter-spacing: -0.725px;
-                                    margin-bottom: 16px;
-                                }
-                                &_title-event {
-                                    color: $color-white;
-                                    font-size: 17px;
-                                    font-style: normal;
-                                    font-weight: 700;
-                                    line-height: 102.1%;
-                                    letter-spacing: -0.765px;
+                            }
+                        }
+                        &-4,
+                        &-3 {
+                            .content-single-event {
+                                padding: 0 2.5%;
+                                .content-single-event {
+                                    &_container-general-info-event {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        &_day-event {
+                                            font-size: 56.58px;
+                                            font-style: normal;
+                                            font-weight: 800;
+                                            line-height: 102.1%;
+                                            letter-spacing: -2.546px;
+                                        }
+                                        &_orario-event {
+                                            font-size: 20.122px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 102.1%;
+                                            letter-spacing: -0.905px;
+                                        }
+                                        &_title-event {
+                                            font-size: 23.805px;
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            line-height: 102.1%;
+                                            letter-spacing: -1.071px;
+                                            width: 70%;
+                                            /* padding-right: 30%; */
+                                            padding-right: 20%;
+                                        }
+                                    }
+                                    &_container-image {
+                                        margin: 16px 0 32px;
+                                        img {
+                                            width: 100%;
+                                            height: auto;
+                                        }
+                                    }
+                                    &_type-event {
+                                        color: $color-ocra;
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 102.1%;
+                                        letter-spacing: -0.81px;
+                                        margin: 16px 0;
+                                    }
+                                    &_cta-book-event {
+                                        margin: 16px 0;
+                                        a {
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 8px;
+                                            color: $color-ocra;
+                                            font-size: 18px;
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            line-height: normal;
+                                            text-transform: uppercase;
+                                            .icona {
+                                                display: flex;
+                                                align-items: center;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }

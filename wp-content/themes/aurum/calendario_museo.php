@@ -58,8 +58,10 @@
                     <?php @include('calendar_element/calendar_file.php');?>
                 </div>
                 <!-- /.col-md-8 -->
-                <div class="col-md-4"></div>
-                <!-- /.col-md-4 -->
+                <div class="col-md-3">
+                    <?php @include('calendar_element/active_single_event.php')?>
+                </div>
+                <!-- /.col-md-3 -->
             </div>
             <!-- /.row -->
         </div>
