@@ -2505,9 +2505,7 @@ body.page-template-calendario-template {
         }
         /* _title */
         &_main-content {
-            border: 1px solid red;
             margin: 90px auto;
-            padding: 120px 0;
             .container {
                 .row {
                     .col-md {
@@ -2610,6 +2608,7 @@ body.page-template-calendario-template {
                         }
                         &-4,
                         &-3 {
+                            margin-left: 32px;
                             .content-single-event {
                                 padding: 0 2.5%;
                                 .content-single-event {
