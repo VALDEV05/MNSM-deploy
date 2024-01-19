@@ -20,5 +20,6 @@ wp_footer();
 	
 	<!-- <?php echo 'ET: ', microtime( true ) - TS, 's ', $theme_version, ( is_child_theme() ? 'ch' : '' ); ?> -->
 
+
 </body>
 </html>

@@ -33,7 +33,8 @@ if (!defined('ABSPATH')) {
 	<?php wp_head(); ?>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 
@@ -45,7 +46,7 @@ if (!defined('ABSPATH')) {
 	 */
 	do_action('aurum_body_start');
 	@include('tpls/menu-full-page.php');
-	
+
 	/**
 	 * Site header
 	 */

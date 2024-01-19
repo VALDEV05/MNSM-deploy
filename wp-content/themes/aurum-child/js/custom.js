@@ -5,6 +5,7 @@ function init() {
     customMenuVisitaMuseo();
     mobileAdjustOpeningHours();
     activeMenuFullPageMobile();
+    sliderSwiperSingleEvent();
 }
 
 function branding() {
@@ -150,6 +151,24 @@ function activeMenuFullPageMobile() {
             body.css("overflow-y", "scroll");
         });
     }
+}
+
+function sliderSwiperSingleEvent() {
+    var swiper = new Swiper(".swiper.swiper_single_event", {
+        direction: 'horizontal',
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
+
 }
 
 jQuery(document).ready(init);
