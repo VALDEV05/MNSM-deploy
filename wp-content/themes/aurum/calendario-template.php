@@ -14,7 +14,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header();
+echo '<div class="container-calendar-template">';
 
 @include('calendario_museo.php');
+
+the_content();
+
+echo '</div>';
 
 get_footer(); 

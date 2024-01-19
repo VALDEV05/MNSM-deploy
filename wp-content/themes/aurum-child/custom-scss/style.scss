@@ -2416,339 +2416,355 @@ body {
    ========================================================================== */
 
 body.page-template-calendario-template {
-    .container-page-calendar {
-        background-color: $color-background;
-        padding: 0 0 32px;
-        &_title {
-            position: relative;
-            padding: 0;
-            padding-top: 32px;
-            .container {
+    .container-calendar-template {
+        .container-page-calendar {
+            background-color: $color-background;
+            padding: 0 0 32px;
+            &_title {
                 position: relative;
-                z-index: 1;
-                h1,
-                h2,
-                h3,
-                h4 {
-                    span {
-                        color: $color-magenta;
-                    }
-                }
-            }
-            .element-decoration-title-la-storia {
-                position: absolute;
-                bottom: 5px;
-                z-index: 0;
-                img {
-                    width: 100%;
-                }
-            }
-            .container {
-                .row {
-                    .col-md {
-                        &-4 {
-                            display: flex;
-                            align-items: center;
-                            margin-top: 34px;
-                            .container_filter_calendar {
-                                display: flex;
-                                flex-wrap: wrap;
-                                gap: 14px;
-                                &>.container_filter_calendar_item {
-                                    font-size: 18px;
-                                    font-style: normal;
-                                    font-weight: 700;
-                                    width: 38%;
-                                    display: flex;
-                                    align-items: center;
-                                    gap: 8px;
-                                    &:nth-child(even) {
-                                        width: 58%;
-                                    }
-                                    .dot-element {
-                                        width: 18px;
-                                        height: auto;
-                                        aspect-ratio: 1;
-                                        border-radius: 50%;
-                                        margin-top: -14px;
-                                    }
-                                    &_concerti {
-                                        color: $color-magenta;
-                                        .dot-element {
-                                            background-color: $color-magenta;
-                                        }
-                                    }
-                                    &_aperture-straordinarie {
-                                        color: $color-ocra;
-                                        .dot-element {
-                                            background-color: $color-ocra;
-                                        }
-                                    }
-                                    &_progetti {
-                                        color: $color-yellow;
-                                        .dot-element {
-                                            background-color: $color-yellow;
-                                        }
-                                    }
-                                    &_visite-guidate {
-                                        color: $color-orange;
-                                        .dot-element {
-                                            background-color: $color-orange;
-                                        }
-                                    }
-                                }
-                            }
+                padding: 0;
+                padding-top: 32px;
+                .container {
+                    position: relative;
+                    z-index: 1;
+                    h1,
+                    h2,
+                    h3,
+                    h4 {
+                        span {
+                            color: $color-magenta;
                         }
                     }
                 }
-            }
-        }
-        /* _title */
-        &_main-content {
-            margin: 90px auto;
-            .container {
-                .row {
-                    .container-switcher-date-calendar {
-                        position: unset;
-                        .switcher-date {
-                            display: flex;
-                            gap: 32px;
-                        }
-                        .swiper-button-prev,
-                        .swiper-button-next {
-                            position: unset;
-                            margin-top: 0px;
-                            transform: unset;
-                        }
-                    }
-                    .col-md {
-                        &-8 {
-                            .container-switcher-date-calendar {
-                                display: flex;
-                                gap: 32px;
-                                justify-content: center;
-                                padding-bottom: 16px;
-                                margin-bottom: 16px;
-                                border-bottom: 3px solid #fefefe40;
-                                align-items: center;
-                                .selector-for {
-                                    &-month,
-                                    &-year {
-                                        select {
-                                            max-width: fit-content;
-                                            background: transparent;
-                                            border: none;
-                                            text-transform: uppercase;
-                                            color: $color-white;
-                                            font-size: 30px;
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            line-height: 102.1%;
-                                            -webkit-appearance: none;
-                                            -moz-appearance: none;
-                                            appearance: none;
-                                            background-image: url("../../../../wp-content/uploads/2024/01/arrow_select.svg");
-                                            background-position: right;
-                                            background-repeat: no-repeat;
-                                            padding: 4px 16px 4px 4px;
-                                            option {
-                                                font-size: 16px;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            .list-complete-event {
-                                display: flex;
-                                flex-wrap: wrap;
-                                justify-content: space-between;
-                                padding: 0 2.5%;
-                                &.swiper-pagination.swiper-pagination-clickable {
-                                    position: unset;
-                                }
-                                .swiper-pagination-bullet {
-                                    width: 22.5%;
-                                    padding: 14px;
-                                    height: unset;
-                                    background: unset;
-                                    border-radius: 0px;
-                                    opacity: 1;
-                                    &-active {
-                                        background-color: $color-grey;
-                                    }
-                                    .single-event {
-                                        display: flex;
-                                        flex-direction: column;
-                                        align-items: flex-start;
-                                        &_day-event {
-                                            display: flex;
-                                            .container_element {
-                                                color: $color-white;
-                                                font-size: 45px;
-                                                font-style: normal;
-                                                line-height: 102.1%;
-                                                font-weight: 800;
-                                            }
-                                            .container-type-daily-evento {
-                                                display: flex;
-                                                justify-content: center;
-                                                align-items: center;
-                                                gap: 6px;
-                                                margin: 0 6px;
-                                                .dot-type-daily-evento {
-                                                    width: 18px;
-                                                    height: auto;
-                                                    aspect-ratio: 1;
-                                                    border-radius: 50%;
-                                                    &.concerti {
-                                                        background-color: $color-magenta;
-                                                    }
-                                                    &.aperture-straordinarie {
-                                                        background-color: $color-ocra;
-                                                    }
-                                                    &.progetti {
-                                                        background-color: $color-yellow;
-                                                    }
-                                                    &.visite-guidate {
-                                                        background-color: $color-orange;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        &_orario-event {
-                                            font-size: 16px;
-                                            font-weight: 400;
-                                            font-style: normal;
-                                            line-height: 102.1%;
-                                            letter-spacing: -0.725px;
-                                            margin-bottom: 16px;
-                                        }
-                                        &_title-event {
-                                            color: $color-white;
-                                            font-size: 17px;
-                                            font-style: normal;
-                                            font-weight: 700;
-                                            line-height: 102.1%;
-                                            letter-spacing: -0.765px;
-                                            text-align: left;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                        &-4,
-                        &-3 {
-                            margin-left: 32px;
-                            .content-single-event {
-                                padding: 0 2.5%;
-                                .content-single-event {
-                                    &_container-general-info-event {
-                                        display: flex;
-                                        justify-content: space-between;
-                                        &_day-event {
-                                            font-size: 56.58px;
-                                            font-style: normal;
-                                            font-weight: 800;
-                                            line-height: 102.1%;
-                                            letter-spacing: -2.546px;
-                                        }
-                                        &_orario-event {
-                                            font-size: 20.122px;
-                                            font-style: normal;
-                                            font-weight: 400;
-                                            line-height: 102.1%;
-                                            letter-spacing: -0.905px;
-                                        }
-                                        &_title-event {
-                                            font-size: 23.805px;
-                                            font-style: normal;
-                                            font-weight: 700;
-                                            line-height: 102.1%;
-                                            letter-spacing: -1.071px;
-                                            width: 70%;
-                                            /* padding-right: 30%; */
-                                            padding-right: 20%;
-                                        }
-                                    }
-                                    &_container-image {
-                                        margin: 16px 0 32px;
-                                        img {
-                                            width: 100%;
-                                            height: auto;
-                                        }
-                                    }
-                                    &_type-event {
-                                        color: $color-ocra;
-                                        font-size: 18px;
-                                        font-style: normal;
-                                        font-weight: 400;
-                                        line-height: 102.1%;
-                                        letter-spacing: -0.81px;
-                                        margin: 16px 0;
-                                    }
-                                    &_cta-book-event {
-                                        margin: 16px 0;
-                                        a {
-                                            display: flex;
-                                            align-items: center;
-                                            gap: 8px;
-                                            color: $color-ocra;
-                                            font-size: 18px;
-                                            font-style: normal;
-                                            font-weight: 700;
-                                            line-height: normal;
-                                            text-transform: uppercase;
-                                            .icona {
-                                                display: flex;
-                                                align-items: center;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        /* _main-content */
-        &_fixed-appoinments {
-            .container-page-calendar_title {
                 .element-decoration-title-la-storia {
-                    bottom: unset;
-                    top: 48px;
+                    position: absolute;
+                    bottom: 5px;
+                    z-index: 0;
+                    img {
+                        width: 100%;
+                    }
                 }
                 .container {
                     .row {
-                        position: relative;
-                        .col-md-7 {
-                            h4 {
-                                strong {
-                                    color: $color-magenta;
-                                    font-weight: 400;
+                        .col-md {
+                            &-4 {
+                                display: flex;
+                                align-items: center;
+                                margin-top: 34px;
+                                .container_filter_calendar {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    gap: 14px;
+                                    &>.container_filter_calendar_item {
+                                        font-size: 18px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        width: 38%;
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 8px;
+                                        &:nth-child(even) {
+                                            width: 58%;
+                                        }
+                                        .dot-element {
+                                            width: 18px;
+                                            height: auto;
+                                            aspect-ratio: 1;
+                                            border-radius: 50%;
+                                            margin-top: -14px;
+                                        }
+                                        &_concerti {
+                                            color: $color-magenta;
+                                            .dot-element {
+                                                background-color: $color-magenta;
+                                            }
+                                        }
+                                        &_aperture-straordinarie {
+                                            color: $color-ocra;
+                                            .dot-element {
+                                                background-color: $color-ocra;
+                                            }
+                                        }
+                                        &_progetti {
+                                            color: $color-yellow;
+                                            .dot-element {
+                                                background-color: $color-yellow;
+                                            }
+                                        }
+                                        &_visite-guidate {
+                                            color: $color-orange;
+                                            .dot-element {
+                                                background-color: $color-orange;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
-                        .container-rassegne {
-                            display: flex;
-                            width: 100%;
-                            max-width: 100%;
-                            gap: 32px;
-                            color: $color-ocra;
-                            text-align: center;
-                            font-size: 18px;
-                            font-style: normal;
-                            font-weight: 700;
-                            line-height: normal;
-                            position: absolute;
-                            bottom: 30px;
-                            left: 300px;
+                    }
+                }
+            }
+            /* _title */
+            &_main-content {
+                margin: 90px auto;
+                .container {
+                    .row {
+                        .container-switcher-date-calendar {
+                            position: unset;
+                            .switcher-date {
+                                display: flex;
+                                gap: 32px;
+                            }
+                            .swiper-button-prev,
+                            .swiper-button-next {
+                                position: unset;
+                                margin-top: 0px;
+                                transform: unset;
+                            }
+                        }
+                        .col-md {
+                            &-8 {
+                                .container-switcher-date-calendar {
+                                    display: flex;
+                                    gap: 32px;
+                                    justify-content: center;
+                                    padding-bottom: 16px;
+                                    margin-bottom: 16px;
+                                    border-bottom: 3px solid #fefefe40;
+                                    align-items: center;
+                                    .selector-for {
+                                        &-month,
+                                        &-year {
+                                            select {
+                                                max-width: fit-content;
+                                                background: transparent;
+                                                border: none;
+                                                text-transform: uppercase;
+                                                color: $color-white;
+                                                font-size: 30px;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                line-height: 102.1%;
+                                                -webkit-appearance: none;
+                                                -moz-appearance: none;
+                                                appearance: none;
+                                                background-image: url("../../../../wp-content/uploads/2024/01/arrow_select.svg");
+                                                background-position: right;
+                                                background-repeat: no-repeat;
+                                                padding: 4px 16px 4px 4px;
+                                                option {
+                                                    font-size: 16px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .list-complete-event {
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: space-between;
+                                    padding: 0 2.5%;
+                                    &.swiper-pagination.swiper-pagination-clickable {
+                                        position: unset;
+                                    }
+                                    .swiper-pagination-bullet {
+                                        width: 22.5%;
+                                        padding: 14px;
+                                        height: unset;
+                                        background: unset;
+                                        border-radius: 0px;
+                                        opacity: 1;
+                                        &-active {
+                                            background-color: $color-grey;
+                                        }
+                                        .single-event {
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: flex-start;
+                                            &_day-event {
+                                                display: flex;
+                                                .container_element {
+                                                    color: $color-white;
+                                                    font-size: 45px;
+                                                    font-style: normal;
+                                                    line-height: 102.1%;
+                                                    font-weight: 800;
+                                                }
+                                                .container-type-daily-evento {
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    gap: 6px;
+                                                    margin: 0 6px;
+                                                    .dot-type-daily-evento {
+                                                        width: 18px;
+                                                        height: auto;
+                                                        aspect-ratio: 1;
+                                                        border-radius: 50%;
+                                                        &.concerti {
+                                                            background-color: $color-magenta;
+                                                        }
+                                                        &.aperture-straordinarie {
+                                                            background-color: $color-ocra;
+                                                        }
+                                                        &.progetti {
+                                                            background-color: $color-yellow;
+                                                        }
+                                                        &.visite-guidate {
+                                                            background-color: $color-orange;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                            &_orario-event {
+                                                font-size: 16px;
+                                                font-weight: 400;
+                                                font-style: normal;
+                                                line-height: 102.1%;
+                                                letter-spacing: -0.725px;
+                                                margin-bottom: 16px;
+                                            }
+                                            &_title-event {
+                                                color: $color-white;
+                                                font-size: 17px;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                line-height: 102.1%;
+                                                letter-spacing: -0.765px;
+                                                text-align: left;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &-4,
+                            &-3 {
+                                margin-left: 32px;
+                                .content-single-event {
+                                    padding: 0 2.5%;
+                                    .content-single-event {
+                                        &_container-general-info-event {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            &_day-event {
+                                                font-size: 56.58px;
+                                                font-style: normal;
+                                                font-weight: 800;
+                                                line-height: 102.1%;
+                                                letter-spacing: -2.546px;
+                                            }
+                                            &_orario-event {
+                                                font-size: 20.122px;
+                                                font-style: normal;
+                                                font-weight: 400;
+                                                line-height: 102.1%;
+                                                letter-spacing: -0.905px;
+                                            }
+                                            &_title-event {
+                                                font-size: 23.805px;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                line-height: 102.1%;
+                                                letter-spacing: -1.071px;
+                                                width: 70%;
+                                                /* padding-right: 30%; */
+                                                padding-right: 20%;
+                                            }
+                                        }
+                                        &_container-image {
+                                            margin: 16px 0 32px;
+                                            img {
+                                                width: 100%;
+                                                height: auto;
+                                            }
+                                        }
+                                        &_type-event {
+                                            color: $color-ocra;
+                                            font-size: 18px;
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            line-height: 102.1%;
+                                            letter-spacing: -0.81px;
+                                            margin: 16px 0;
+                                        }
+                                        &_cta-book-event {
+                                            margin: 16px 0;
+                                            a {
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 8px;
+                                                color: $color-ocra;
+                                                font-size: 18px;
+                                                font-style: normal;
+                                                font-weight: 700;
+                                                line-height: normal;
+                                                text-transform: uppercase;
+                                                .icona {
+                                                    display: flex;
+                                                    align-items: center;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            /* _main-content */
+            &_fixed-appoinments {
+                .container-page-calendar_title {
+                    .element-decoration-title-la-storia {
+                        bottom: unset;
+                        top: 48px;
+                    }
+                    .container {
+                        .row {
+                            position: relative;
+                            .col-md-7 {
+                                h4 {
+                                    strong {
+                                        color: $color-magenta;
+                                        font-weight: 400;
+                                    }
+                                }
+                            }
+                            .container-rassegne {
+                                display: flex;
+                                width: 100%;
+                                max-width: 100%;
+                                gap: 32px;
+                                color: $color-ocra;
+                                text-align: center;
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                position: absolute;
+                                bottom: 30px;
+                                left: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+            /* _fixed-appoinments */
+        }
+        &>.wpb-content-wrapper {
+            .vc_section.section-home-mnsm-instagram {
+                padding: 0;
+                margin-top: -1px;
+                .vc_row.row.row-element-mnsm-decoration-strumento-in-rilievo {
+                    .wpb_column.vc_column_container.vc_col-sm-12 {
+                        padding: 0;
+                        .vc_column-inner {
+                            padding: 0;
                         }
                     }
                 }
             }
         }
-        /* _fixed-appoinments */
     }
 }
 
