@@ -2712,6 +2712,43 @@ body.page-template-calendario-template {
             }
         }
         /* _main-content */
+        &_fixed-appoinments {
+            .container-page-calendar_title {
+                .element-decoration-title-la-storia {
+                    bottom: unset;
+                    top: 48px;
+                }
+                .container {
+                    .row {
+                        position: relative;
+                        .col-md-7 {
+                            h4 {
+                                strong {
+                                    color: $color-magenta;
+                                    font-weight: 400;
+                                }
+                            }
+                        }
+                        .container-rassegne {
+                            display: flex;
+                            width: 100%;
+                            max-width: 100%;
+                            gap: 32px;
+                            color: $color-ocra;
+                            text-align: center;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: normal;
+                            position: absolute;
+                            bottom: 30px;
+                            left: 300px;
+                        }
+                    }
+                }
+            }
+        }
+        /* _fixed-appoinments */
     }
 }
 
