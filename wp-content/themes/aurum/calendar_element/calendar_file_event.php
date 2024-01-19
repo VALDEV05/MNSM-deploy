@@ -54,7 +54,7 @@ $type_daily_evento_field = get_field('tipologia_giornata_evento', $id_evento);
 
 ?>
 
-<div class="single-event">
+<div class="single-event ">
     <div class="single-event_day-event">
         <div class="container_element">
             <?php echo $day_data_evento; ?>

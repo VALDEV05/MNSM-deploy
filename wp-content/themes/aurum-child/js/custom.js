@@ -6,6 +6,7 @@ function init() {
     mobileAdjustOpeningHours();
     activeMenuFullPageMobile();
     sliderSwiperSingleEvent();
+    customSlider();
 }
 
 function branding() {
@@ -160,6 +161,7 @@ function sliderSwiperSingleEvent() {
         // If we need pagination
         pagination: {
             el: '.swiper-pagination',
+            clickable: true,
         },
 
         // Navigation arrows
@@ -168,7 +170,21 @@ function sliderSwiperSingleEvent() {
             prevEl: '.swiper-button-prev',
         }
     });
+    console.log('====================================');
+    console.log(swiper);
+    console.log('====================================');
 
+}
+
+function customSlider() {
+    const listSingleEvent = jQuery('.container-page-calendar_main-content .col-md-8 .list-complete-event_very>div');
+    const listPagination = jQuery('.container-page-calendar_main-content .col-md-8 .swiper-pagination.swiper-pagination-clickable>span');
+    for (let index = 0; index < listPagination.length; index++) {
+        listPaginationSelected = listPagination[index];
+        listSingleEventSelected = listSingleEvent[index]
+        listPaginationSelected.append(listSingleEventSelected)
+
+    }
 }
 
 jQuery(document).ready(init);

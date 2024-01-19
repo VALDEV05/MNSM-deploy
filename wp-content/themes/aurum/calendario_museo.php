@@ -53,13 +53,14 @@
     <!-- /.container-page-calendar_title -->
     <section class="container-page-calendar_main-content">
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="col-md-8">
-                    <?php @include('calendar_element/calendar_file.php');?>
+                    <?php @include('calendar_element/calendar_file.php'); ?>
                 </div>
                 <!-- /.col-md-8 -->
                 <div class="col-md-3">
-                    <?php @include('calendar_element/active_single_event.php')?>
+                    
+                    <?php @include('calendar_element/active_single_event.php') ?>
                 </div>
                 <!-- /.col-md-3 -->
             </div>
