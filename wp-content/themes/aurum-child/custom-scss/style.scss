@@ -2509,11 +2509,16 @@ body.page-template-calendario-template {
             .container {
                 .row {
                     .container-switcher-date-calendar {
-                        border: 1px solid red;
-                        position: relative;
+                        position: unset;
+                        .switcher-date {
+                            display: flex;
+                            gap: 32px;
+                        }
                         .swiper-button-prev,
                         .swiper-button-next {
-                            background-color: red;
+                            position: unset;
+                            margin-top: 0px;
+                            transform: unset;
                         }
                     }
                     .col-md {
@@ -2525,6 +2530,7 @@ body.page-template-calendario-template {
                                 padding-bottom: 16px;
                                 margin-bottom: 16px;
                                 border-bottom: 3px solid #fefefe40;
+                                align-items: center;
                                 .selector-for {
                                     &-month,
                                     &-year {
