@@ -4,6 +4,9 @@
 3. Remove scroll bar
 4. Chiedere loghi svg
 
+#TASK
+- rimuovere scroll menu open
+
 #LIST-LASTORIA
 1. date
 2. image

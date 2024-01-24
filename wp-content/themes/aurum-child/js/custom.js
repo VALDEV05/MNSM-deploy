@@ -32,6 +32,7 @@ function activeMenuFullPage() {
     const header = jQuery(".site-header");
     const footer = jQuery(".site-footer");
     const body = jQuery("body");
+    const html = jQuery("html");
     const tl2 = gsap.timeline({
         paused: true,
     });
@@ -46,12 +47,14 @@ function activeMenuFullPage() {
         jQuery(header).addClass("activeMenuFullPage");
         jQuery(footer).addClass("activeMenuFullPage");
         jQuery(body).css("overflow-y", "hidden");
+        jQuery(html).css("overflow-y", "hidden");
     });
     jQuery(buttonToCloseMenu).click(function() {
         tl2.reverse();
         header.addClass("activeMenuFullPage").removeClass("activeMenuFullPage");
         footer.addClass("activeMenuFullPage").removeClass("activeMenuFullPage");
         body.css("overflow-y", "scroll");
+        html.css("overflow-y", "scroll")
     });
 }
 
